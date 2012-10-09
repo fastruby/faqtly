@@ -1,12 +1,17 @@
 require './config/environment'
 
 class Faqtly < Sinatra::Application
+  # HTTP Authentication
   set :sessions => true
+
+  # HAML / SASS
   set :haml, {:format => :html5, :escape_html => true}
   set :scss, {:style => :compact, :debug_info => false}
 
+  # I18n
   register Sinatra::I18nSupport
   load_locales File.join(Sinatra::Application.root, 'locales')
+  set :default_locale, 'es'
 
   configure :production, :development do
     enable :logging
