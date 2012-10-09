@@ -6,7 +6,7 @@ module Authentication
   def protected!
     unless authorized?
       response['WWW-Authenticate'] = %(Basic realm="Restricted Area")
-      throw(:halt, [401, "Not authorized\n"])
+      throw(:halt, [401, "Unauthorized\n"])
     end
   end
 
@@ -15,7 +15,7 @@ module Authentication
   # @return [Boolean]
   def authorized?
     user = ENV['ADMIN_USER'] || 'admin'
-    pass = ENV['ADMIN_PASSWORD'] || 'admin'
+    pass = ENV['ADMIN_PASSWORD'] || 'ch0p'
 
     @auth ||=  Rack::Auth::Basic::Request.new(request.env)
     @auth.provided? && @auth.basic? && @auth.credentials && @auth.credentials == [user, pass]
