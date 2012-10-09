@@ -2,8 +2,12 @@
 %html{html_attrs}
   %head
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
-    %meta{:name => "lang", :content => "en"}
-    %title Faqtly. Preguntas y Respuestas.
+    %meta{:name => "lang", :content => "es"}
+    
+    %title= page_title(@question)
+        
+    %link{:href => "/images/favicon.png", :rel => "icon", :type => "image/png"}
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}
     %link{:href=>'/stylesheets/bootstrap.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
     %link{:href=>'/stylesheets/application.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
     %link{:href=>'/stylesheets/spacelab.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
