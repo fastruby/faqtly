@@ -1,4 +1,6 @@
-require './config/environment'
+require_relative 'lib/permalinker'
+require_relative 'config/environment'
+
 
 class Faqtly < Sinatra::Application
   # HTTP Authentication
@@ -11,7 +13,9 @@ class Faqtly < Sinatra::Application
   # I18n
   register Sinatra::I18nSupport
   load_locales File.join(Sinatra::Application.root, 'locales')
+
   set :default_locale, 'es'
+  use Rack::MethodOverride
 
   configure :production, :development do
     enable :logging
