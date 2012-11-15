@@ -1,128 +1,68 @@
-"Category","Question","Answer(s)",
-"Sobre OmbuShop","¿Qué es OmbuShop?","OmbuShop es una plataforma para crear tu propia tienda virtual y vender por Internet. No necesitas conocimientos tecnicos, sólo tus productos, un logo el nombre de tu tienda!",
-"Sobre OmbuShop","¿Cómo instalo el software de OmbuShop?","No hace falta instalar nada; ¡haces todo el tu navegador!",
-"Sobre OmbuShop","¿""En qué paises o con cuáles moneda trabaja OmbuShop?","Actualmente la plataforma está disponible en Argentina, Chile y Mexico, y trabajamos con sus monedas. Si quieres te podemos avisar cuando lancemos en tu pais. Escribenos a hola@ombushop.com",
-"Sobre OmbuShop","¿Puedo ver las tiendas que ya venden por la plataforma?","Para ver ejemplos de tiendas que ya venden con nosotros puedes ver esta página: http://www.ombushop.com/ejemplos-de-tiendas-virtuales",
+"Category","Question","Answer(s)"
+"Sobre OmbuShop","¿Qué es OmbuShop?","OmbuShop es una plataforma para crear tu propia tienda virtual y vender por Internet. No necesitas conocimientos tecnicos, sólo tus productos, un logo el nombre de tu tienda!"
+"Sobre OmbuShop","¿Cómo instalo el software de OmbuShop?","No hace falta instalar nada; ¡haces todo el tu navegador!"
+"Sobre OmbuShop","¿""En qué paises o con cuáles moneda trabaja OmbuShop?","Actualmente la plataforma está disponible en Argentina, Chile y Mexico, y trabajamos con sus monedas. Si quieres te podemos avisar cuando lancemos en tu pais. Escribenos a hola@ombushop.com"
+"Sobre OmbuShop","¿Puedo ver las tiendas que ya venden por la plataforma?","Para ver ejemplos de tiendas que ya venden con nosotros puedes ver esta página: http://www.ombushop.com/ejemplos-de-tiendas-virtuales"
 "Sobre OmbuShop","¿Me consideran para trabajar con ustedes?","Por ahora trabajamos más que nada con gente registrada en nuestro programa de partners. Contamos con nuestros partners para los proyectos de customización de las tiendas, y puedes ganarte comisiones de cualquier cliente tuyo que traigas a la plataforma. 
-Inscríbite aquí: http://www.ombushop.com/partners",
-"Set-Up Inicial","¿Cómo empiezo?","Para empezar puedes ir a esta página: http://www.ombushop.com/#signup-form y registrarte. Confirmas tu mail haciendo click en el link que te enviamos por mail y esto te dirigirá a tu panel de administración. Ahí puedes empezar a subir tus productos con las fotos de cada uno. ",
-"Set-Up Inicial","¿Recién ingrese mi mail para abrir mi tienda y lo puse mal. Hay forma de cambiarlo?","No hay problema; envianos un mail a hola@ombushop.com con el nombre de tu tienda para que cambiemos tu mail manualmente. ",
-"Set-Up Inicial","¿Qué tengo que hacer para seguir usando la plataforma una vez que terminé mi periodo de prueba?","Para contratarlo solo deberías pagar el proporcional del mes de la cuenta. Por favor confírmanos cuál plan te interesa y te enviamos el botón de pago online. ",
-"Set-Up Inicial","¿Qué puedo ver/hacer en el panel de administración de pedidos?","Todas las tiendas sobre OmbuShop tienen un panel de administración para pedidos, productos, imágenes, categorías, diseño de la tienda y páginas. Puedes hacer todo que necesites para vender por Internet: subir (o borrar) productos, agregar y cambiar imágenes, customizar el diseño de la tienda, y ver todos los pedidos para coordinar sus entregas. ",
-"Set-Up Inicial","¿Qué url llevaría mi tienda online?","La URL puede ser la que quieras. Si no tienes una dirección, será algo así: http://tutienda.ombushop.com",
-"Set-Up Inicial","¿Ya tengo un dominio registrado; ¿Lo puedo usar con la tienda ? ¿Cómo se hace?","Como este proceso tiene un par de pasos, lo explicamos con mucho detalle en nuestro blog. Si no queda claro, avisanos! http://blog.ombushop.com/post/23543978267/como-administrar-el-dominio-com-ar-de-tu-tienda-online",
-"Set-Up Inicial","¿Cómo muestro mi tienda online en Facebook?","1. Entrar al administrador: http://www.ombushop.com/admin 2. Ir aquí: http://www.ombushop.com/admin/social_networks 3. Ahí mismo, autorizar a la aplicación de OmbuShop 4. Agregar la aplicación a tu página de Facebook. Y listo!",
-"Diseño","¿Necesito ser diseñador o programador para armar mi tienda?","Para nada. La programación ya hicimos toda. Puedes subir tus productos y logo y quedarte con el diseño clasico de tu tienda, o puedes elegir una plantilla para cambiar el diseño un poco. Si quieres customizar la tienda totalmente, necesitas un amigo diseñador web o te podemos poner un contacto con un diseñador de nuestro programa de partners. ",
-"Diseño","¿Qué es Liquid?","Liquid es una plantilla de código abierto hecha para que las plataformas de eCommerce sean totalmente customizadas. Está integrada con las plantillas de OmbuShop la puedes tocar para cambiar lo que quieras del diseño de tu tienda. ",
-"Diseño","¿Ustedes brindan servicio personalizado para ajustar algunos detalles de mi tienda?","Nosotros brindamos servicios personalizados que varian de ajustar detalles de tu tienda a customizarla por completo. Solo necesitamos más información sobre lo qué precises; mándanos un mail a hola@ombushop.com y te responderemos enseguida! ",
-"Diseño","¿Me explican un poco mejor cómo funciona el sitio para diseñadores? Cúal es el costo?","Como OmbuShop es la plataforma más amigable de los diseñadores web, no tienen que pagar nada. Pueden usar nuestra API de plantillas Liquid para crear tiendas para sus clientes, ¡y además ganan una comisión muy linda de por vida! Leer más: http://www.ombushop.com/partners",
-"Diseño","¿El CSS es modificable?","Sí, de hecho toda la plataforma es totalmente customiza. Si quieres que tu tienda online tenga el mismo look-and-feel de tu sitio, se puede tocar tanto el CSS como el HTML y Javascript para que sea así. Puedes modificar nuestras plantillas un poco o cambiarlas por completo. ",
+Inscríbite aquí: http://www.ombushop.com/partners"
+"Setup Inicial","¿Cómo empiezo?","Para empezar puedes ir a esta página: http://www.ombushop.com/#signup-form y registrarte. Confirmas tu mail haciendo click en el link que te enviamos por mail y esto te dirigirá a tu panel de administración. Ahí puedes empezar a subir tus productos con las fotos de cada uno. "
+"Setup Inicial","¿Recién ingrese mi mail para abrir mi tienda y lo puse mal. Hay forma de cambiarlo?","No hay problema; envianos un mail a hola@ombushop.com con el nombre de tu tienda para que cambiemos tu mail manualmente. "
+"Setup Inicial","¿Qué tengo que hacer para seguir usando la plataforma una vez que terminé mi periodo de prueba?","Para contratarlo solo deberías pagar el proporcional del mes de la cuenta. Por favor confírmanos cuál plan te interesa y te enviamos el botón de pago online. "
+"Setup Inicial","¿Qué puedo ver/hacer en el panel de administración de pedidos?","Todas las tiendas sobre OmbuShop tienen un panel de administración para pedidos, productos, imágenes, categorías, diseño de la tienda y páginas. Puedes hacer todo que necesites para vender por Internet: subir (o borrar) productos, agregar y cambiar imágenes, customizar el diseño de la tienda, y ver todos los pedidos para coordinar sus entregas. "
+"Setup Inicial","¿Qué url llevaría mi tienda online?","La URL puede ser la que quieras. Si no tienes una dirección, será algo así: http://tutienda.ombushop.com"
+"Setup Inicial","¿Ya tengo un dominio registrado; ¿Lo puedo usar con la tienda ? ¿Cómo se hace?","Como este proceso tiene un par de pasos, lo explicamos con mucho detalle en nuestro blog. Si no queda claro, avisanos! http://blog.ombushop.com/post/23543978267/como-administrar-el-dominio-com-ar-de-tu-tienda-online"
+"Setup Inicial","¿Cómo muestro mi tienda online en Facebook?","1. Entrar al administrador: http://www.ombushop.com/admin 2. Ir aquí: http://www.ombushop.com/admin/social_networks 3. Ahí mismo, autorizar a la aplicación de OmbuShop 4. Agregar la aplicación a tu página de Facebook. Y listo!"
+"Diseño","¿Necesito ser diseñador o programador para armar mi tienda?","Para nada. La programación ya hicimos toda. Puedes subir tus productos y logo y quedarte con el diseño clasico de tu tienda, o puedes elegir una plantilla para cambiar el diseño un poco. Si quieres customizar la tienda totalmente, necesitas un amigo diseñador web o te podemos poner un contacto con un diseñador de nuestro programa de partners. "
+"Diseño","¿Qué es Liquid?","Liquid es una plantilla de código abierto hecha para que las plataformas de eCommerce sean totalmente customizadas. Está integrada con las plantillas de OmbuShop la puedes tocar para cambiar lo que quieras del diseño de tu tienda. "
+"Diseño","¿Ustedes brindan servicio personalizado para ajustar algunos detalles de mi tienda?","Nosotros brindamos servicios personalizados que varian de ajustar detalles de tu tienda a customizarla por completo. Solo necesitamos más información sobre lo qué precises; mándanos un mail a hola@ombushop.com y te responderemos enseguida! "
+"Diseño","¿Me explican un poco mejor cómo funciona el sitio para diseñadores? Cúal es el costo?","Como OmbuShop es la plataforma más amigable de los diseñadores web, no tienen que pagar nada. Pueden usar nuestra API de plantillas Liquid para crear tiendas para sus clientes, ¡y además ganan una comisión muy linda de por vida! Leer más: http://www.ombushop.com/partners"
+"Diseño","¿El CSS es modificable?","Sí, de hecho toda la plataforma es totalmente customiza. Si quieres que tu tienda online tenga el mismo look-and-feel de tu sitio, se puede tocar tanto el CSS como el HTML y Javascript para que sea así. Puedes modificar nuestras plantillas un poco o cambiarlas por completo. "
 "Diseño","¿Cómo creo formularios para mi tienda?","Para crear formularios puedes usar Google Docs o Wufoo que son servicios especializados en formularios. Para agregar un formulario, tendrás que editar alguno de los templates para incluirlo: http://www.ombushop.com/admin/templates O alguna de las páginas:
-http://www.ombushop.com/admin/pages",
-"Diseño","¿Cuentan con una API?","Sí, contamos con una API para diseñadores: http://www.ombushop.com/liquid-api/index.html. Esta API es para ajustar todo el estilo de la tienda (HTML, CSS, Javascript)",
-"Diseño","¿Se puede incorporar imagenes a las páginas?","Para incorporar imágenes puedes editar cada uno de los productos y agregar fotos de los mismos. Si quieres agregar imágenes para el diseño de tu tienda, puedes ir a esta sección: http://www.ombushop.com/admin/design_files ",
-"Pedidos","¿Qué tienen que hacer mis clientes para comprar? ¿Cómo se puede pedir mis productos?","Para comprar, deben ir a tu tienda y elegir los productos que quieran. Para cada producto, deben clickear Comprar y luego seguir los pasos de Checkout.",
-"Pedidos","¡Me llegó un pedido! ¿Qué hago?","¡Festejas! Pero en serio, puedes ver todos los detalles del pedido y administralos en el panel de administración bajo la pestaña Pedidos. Deberías asegurarte de que hayas recibo el pago si fue por algún medio de pago electrónico y después enviar el producto al cliente (si no lo retira en local). Cuando recibes el pago y envias el producto, no te olvides de marcarlo en Pedidos para mantener tu registro de pedidos actualizado. ",
-"Pedidos","¿Cómo funciona el tema de los envíos?","Cada tienda en la plataforma se encarga de entregar sus productos al consumidor. Puede ser por correo o retiro en local. La plataforma ofrece una variedad de calculadoras para calcular el costo de envío. En base a la zona de envío de tu cliente, tendrá la opción de usar uno o más medios de envío (que a su vez utilizan estas calculadoras). Si quieres leer un poco más sobre las calculadoras, aquí escribimos un artículo: http://blog.ombushop.com/post/26992317866/calculadoras-de-envio-para-envios-flexibles",
-"Medios de pago","¿Cuales son los medios de pago que puedo ofrecerles a mis clientes?","La plataforma está integrado con MercadoPago y Dineromail. Puedes elegir el que te guste más para ofrecerles medios de pago como tarjetas de crédito y débito, PagoFácil y otros. Tambien puedes aceptar efectivo.",
-"Medios de pago","¿Puedo aceptar efectivo para las compras en mi tienda?","Sí, no hay problema. Puedes ofrecerles a los compradores pago contra entrega.",
-"Medios de pago","¿Puedo ofrecer financiación de cuotas? ¿Cuánto me debitarian por esa financiación? ","En caso de pago con tarjetas de crédito, débito o PagoFácil, la financiación la deberá pagar el comprador. Para ciertos bancos la financiación es con 0% de interés, depende del banco que haya emitido la tarjeta. El dinero entra directamente a tu cuenta en Dinero Mail o Mercado Pago, el procesador de pagos que tu quieras.",
-"Medios de pago","¿Qué necesito para aceptar pagos?  ¿Una página?","Para aceptar pagos, no necesitas una página. Tu tienda en nuestra plataforma puede actuar como la página principal de tu empresa donde muestras tus productos y compartir información sobre la marca, el equipo de la empresa, y mucho más. Para aceptar los medios de pago que no sean efectivo, ¡sólo necesitas una dirección de mail!",
-"Medios de pago","¿Puedo poner mi teléfono y la dirección de mi tienda para que puedan ir directamente a comprar mi producto?","Sí, puedes poner toda tu información de contacto en tu sitio para que vayan directamente a comprar tu producto.",
-"Medios de pago","¿Cómo es el tema de los cobros? ¿Cuando la gente paga con tarjeta, DineroMail u otros medios dónde recibo yo el pago por esto","Tu tienda está integrada con DineroMail y MercadoPago. Los dos son servicios web que te permiten recibir todos los pagos en tu cuenta online. Para recibir el dinero te ofrecen varias alternativas. Ver: https://ar.dineromail.com/costos y https://www.mercadopago.com/mla/ayuda/cuanto-cuesta-recibir-pagos. Depende de la opción que elijas, puedes recibir el dinero vía transferencia bancaria, retirando un cheque en una sucursal bancaria, recibiendo un giro postal o recibiendo un cheque por correo. Nosotros le recomendamos a nuestras tiendas que reciban el dinero por transferencia bancaria, ya que el costo es el menor de todos. ",
-"Medios de pago","¿Qué tengo que hacer para activar los medios de pago online?","Para activar los medios de pagos, entra a tu panal de administración, haz click en Configuración y seguir los pasos que figuran ahí. ",
-"Tu Cuenta","¿Qué costo tiene la plataforma?","Cobramos un monto mensual más una pequeña comisión por venta realizada. Los montos y el porcentage de la comisión dependen del plan que elijas; los puedes ver aquí: http://www.ombushop.com/planes-y-precios-para-tu-tienda-virtual",
-"Tu Cuenta","¿Cómo pago?","Puedes pagarnos por DineroMail, MercadoPago o por transferencia bancaria. Puedes pagar por 6 o 12 meses juntos y recibir un descuento del 10 o 20% respectivamente. ",
-"Tu Cuenta","¿Cómo me cobran? How do I get billed?","Por ahora te enviamos un pedido de pago por mail todos los meses pero pronto tendrás un butón en tu panel de administración para que pagues desde tu cuenta de OmbuShop. ",
-"Tu Cuenta","¿Se puede poner contraseña a algunas páginas? Serían para el control de acceso al sitio","No, por el momento las únicas páginas restringidas son las de administración
-(/www.ombushop.com/admin).",
-"Diseño Web","Con que lenguaje de programacion puedo hacer un formulario de contacto para una de las secciones de la plantilla?","Para hacer cualquier cosa de programación, utilizamos Liquid. Este lenguaje de templates te permite hacer todo lo que podrías hacer con PHP, Java o lo que sea. Acá un par de links: 1. Introducción a Liquid para Diseñadores: https://github.com/Shopify/liquid/wiki/ES-Liquid-para-dise%C3%B1adores . 2. Introducción a la API de OmbuShop para customizaciones: http://www.ombushop.com/liquid-api/index.html#Variables_Disponibles_por_Template. Para el caso específico de un formulario de contacto, te recomendamos usar http://wufoo.com/ o https://docs.google.com que son super flexibles al momento de administrar los campos del form. ",
-"Diseño Web","Estoy modificando el template de index.liquid con el fin de crear un form que me permita re ordenar los resultados y cambiar la cantidad de items por pagina. estuve haciendo pruebas pero no consigo recuperar los datos de la url, ni tampoco pasarlos a {% paginate products by XX %} . queria saber si existe algun ejemplo con esto que necesito.","Para hacer eso puedes utilizar la variable global ""parameters"" (ver: http://www.ombushop.com/liquid-api/index.html#parameters). Podés hacer un GET request, a través de un link, que sea algo así: http://silviamensio.ombushop.com/products?limit=3 . Luego en el template podés acceder a ese parameter e incluirlo en la paginación así: {% paginate products by parameters['limit'] %} . Eso debería funcionar. ",
-,,,
-,,,
-,,,
-,,"Detailed Questions",
-,,,
-,,,
-,,"Lo que quiero hacer es crear una subscripcion para newsletter, He estado haciendo pruebas con ombushop y me di con que si puedo usar php a traves de un iframe subido en otro servidor. Pero puedo subir una base de datos a ombushop??","Esa es una forma también. Muchas de nuestras tiendas usan Mailchimp para manejar sus mailings. Te provee widgets y snippets para incluir forms en las páginas de tu tienda. ¿Qué tendría la base de datos? La plataforma se concentra en productos, categorías y ventas. Para mailings existen servicios muy buenos que se integran con OmbuShop fácilmente. "
-,,"More details about url forwarding/domain names","Para que empiece a funcionar con tu tienda en OmbuShop, primero tenés que ir y registrarte: http://www.ombushop.com/#signup-form. Luego tenés que crear un CNAME en Namecheap que apunte a tu tienda. Por ejemplo: Para el CNAME ""www"" puedes hacer que apunte a  quimaydesign.ombushop.com
+http://www.ombushop.com/admin/pages"
+"Diseño","¿Cuentan con una API?","Sí, contamos con una API para diseñadores: http://www.ombushop.com/liquid-api/index.html. Esta API es para ajustar todo el estilo de la tienda (HTML, CSS, Javascript)"
+"Diseño","¿Se puede incorporar imagenes a las páginas?","Para incorporar imágenes puedes editar cada uno de los productos y agregar fotos de los mismos. Si quieres agregar imágenes para el diseño de tu tienda, puedes ir a esta sección: http://www.ombushop.com/admin/design_files "
+"Pedidos","¿Qué tienen que hacer mis clientes para comprar? ¿Cómo se puede pedir mis productos?","Para comprar, deben ir a tu tienda y elegir los productos que quieran. Para cada producto, deben clickear Comprar y luego seguir los pasos de Checkout."
+"Pedidos","¡Me llegó un pedido! ¿Qué hago?","¡Festejas! Pero en serio, puedes ver todos los detalles del pedido y administralos en el panel de administración bajo la pestaña Pedidos. Deberías asegurarte de que hayas recibo el pago si fue por algún medio de pago electrónico y después enviar el producto al cliente (si no lo retira en local). Cuando recibes el pago y envias el producto, no te olvides de marcarlo en Pedidos para mantener tu registro de pedidos actualizado. "
+"Pedidos","¿Cómo funciona el tema de los envíos?","Cada tienda en la plataforma se encarga de entregar sus productos al consumidor. Puede ser por correo o retiro en local. La plataforma ofrece una variedad de calculadoras para calcular el costo de envío. En base a la zona de envío de tu cliente, tendrá la opción de usar uno o más medios de envío (que a su vez utilizan estas calculadoras). Si quieres leer un poco más sobre las calculadoras, aquí escribimos un artículo: http://blog.ombushop.com/post/26992317866/calculadoras-de-envio-para-envios-flexibles"
+"Medios de pago","¿Cuales son los medios de pago que puedo ofrecerles a mis clientes?","La plataforma está integrado con MercadoPago y Dineromail. Puedes elegir el que te guste más para ofrecerles medios de pago como tarjetas de crédito y débito, PagoFácil y otros. Tambien puedes aceptar efectivo."
+"Medios de pago","¿Puedo aceptar efectivo para las compras en mi tienda?","Sí, no hay problema. Puedes ofrecerles a los compradores pago contra entrega."
+"Medios de pago","¿Puedo ofrecer financiación de cuotas? ¿Cuánto me debitarian por esa financiación? ","En caso de pago con tarjetas de crédito, débito o PagoFácil, la financiación la deberá pagar el comprador. Para ciertos bancos la financiación es con 0% de interés, depende del banco que haya emitido la tarjeta. El dinero entra directamente a tu cuenta en Dinero Mail o Mercado Pago, el procesador de pagos que tu quieras."
+"Medios de pago","¿Qué necesito para aceptar pagos?  ¿Una página?","Para aceptar pagos, no necesitas una página. Tu tienda en nuestra plataforma puede actuar como la página principal de tu empresa donde muestras tus productos y compartir información sobre la marca, el equipo de la empresa, y mucho más. Para aceptar los medios de pago que no sean efectivo, ¡sólo necesitas una dirección de mail!"
+"Medios de pago","¿Puedo poner mi teléfono y la dirección de mi tienda para que puedan ir directamente a comprar mi producto?","Sí, puedes poner toda tu información de contacto en tu sitio para que vayan directamente a comprar tu producto."
+"Medios de pago","¿Cómo es el tema de los cobros? ¿Cuando la gente paga con tarjeta, DineroMail u otros medios dónde recibo yo el pago por esto","Tu tienda está integrada con DineroMail y MercadoPago. Los dos son servicios web que te permiten recibir todos los pagos en tu cuenta online. Para recibir el dinero te ofrecen varias alternativas. Ver: https://ar.dineromail.com/costos y https://www.mercadopago.com/mla/ayuda/cuanto-cuesta-recibir-pagos. Depende de la opción que elijas, puedes recibir el dinero vía transferencia bancaria, retirando un cheque en una sucursal bancaria, recibiendo un giro postal o recibiendo un cheque por correo. Nosotros le recomendamos a nuestras tiendas que reciban el dinero por transferencia bancaria, ya que el costo es el menor de todos. "
+"Medios de pago","¿Qué tengo que hacer para activar los medios de pago online?","Para activar los medios de pagos, entra a tu panal de administración, haz click en Configuración y seguir los pasos que figuran ahí. "
+"Tu Cuenta","¿Qué costo tiene la plataforma?","Cobramos un monto mensual más una pequeña comisión por venta realizada. Los montos y el porcentage de la comisión dependen del plan que elijas; los puedes ver aquí: http://www.ombushop.com/planes-y-precios-para-tu-tienda-virtual"
+"Tu Cuenta","¿Cómo pago?","Puedes pagarnos por DineroMail, MercadoPago o por transferencia bancaria. Puedes pagar por 6 o 12 meses juntos y recibir un descuento del 10 o 20% respectivamente. "
+"Tu Cuenta","¿Cómo me cobran? How do I get billed?","Por ahora te enviamos un pedido de pago por mail todos los meses pero pronto tendrás un butón en tu panel de administración para que pagues desde tu cuenta de OmbuShop. "
+"Tu Cuenta","¿Se puede poner contraseña a algunas páginas? ¿Cómo puedo controlar el acceso al sitio?","No, por el momento las únicas páginas restringidas son las de administración
+(/www.ombushop.com/admin)."
+"Programación","¿Con qué lenguaje de programación puedo hacer un formulario de contacto para una de las secciones de mi plantilla?","Para hacer cualquier cosa de programación, utilizamos Liquid. Este lenguaje de templates te permite hacer todo lo que podrías hacer con PHP, Java o lo que sea. Acá un par de links: 1. Introducción a Liquid para Diseñadores: https://github.com/Shopify/liquid/wiki/ES-Liquid-para-dise%C3%B1adores . 2. Introducción a la API de OmbuShop para customizaciones: http://www.ombushop.com/liquid-api/index.html#Variables_Disponibles_por_Template. Para el caso específico de un formulario de contacto, te recomendamos usar http://wufoo.com/ o https://docs.google.com que son super flexibles al momento de administrar los campos del form. "
+"Programación","¿Cómo puedo acceder a los parámetros dentro de la dirección web? ","Para hacer eso puedes utilizar la variable global ""parameters"" (ver: http://www.ombushop.com/liquid-api/index.html#parameters). Podés hacer un GET request, a través de un link, que sea algo así: http://silviamensio.ombushop.com/products?limit=3 . Luego en el template podés acceder a ese parameter e incluirlo en la paginación así: {% paginate products by parameters['limit'] %} . Eso debería funcionar. "
+"Programación","¿Cómo puedo incluir un newsletter en mi tienda online? ¿Cómo puedo sumar a nuevos suscriptores a mi lista de mailing?","Muchas de nuestras tiendas usan Mailchimp para manejar sus mailings. Te provee widgets y snippets para incluir forms en las páginas de tu tienda. ¿Qué tendría la base de datos? La plataforma se concentra en productos, categorías y ventas. Para mailings existen servicios muy buenos que se integran con OmbuShop fácilmente. "
+"DNS","¿Cómo puedo hacer para que mi tienda virtual tenga mi propio dominio web? ","Para que empiece a funcionar con tu tienda en OmbuShop, primero tienes que ir y registrarte: http://www.ombushop.com/#signup-form. Luego tenés que crear un CNAME en Namecheap que apunte a tu tienda. Por ejemplo: Para el CNAME ""www"" puedes hacer que apunte a  quimaydesign.ombushop.com
 Dentro de OmbuShop tenés que ir a http://www.ombushop.com/admin > Configuración e ingresar http://quimaydesign.com en Dirección Personalizada y luego Guardar. En Namecheap tienes que: 1. Entrar a tu cuenta 2. Ir a Domains > Manage Domains 3. Ir a URL Forwarding 4. Cambiar el registro WWW para que sea un CNAME y tenga la URL quimaydesign.ombushop.com 5. Clickear Save Changes. Con eso debería quedar configurada tu cuenta para que use OmbuShop. "
-,,"Ya armé mi tienda pero necesito ayuda para seguir. Algún consejo?","Puedes leer muchos consejos nuestros en el blog de OmbuShop: w Si quieres ayuda con el marketing de tu tienda, ofrecemos servicios adicionales"
-,,"como pongo los productos en las correspondientes categorias?","tenés que editar el producto y elegir las categorías en la pestaña a la izquierda que dice 'categorías'"
-,,"cual es el maximo de tamaño de fotos que acepta?","4 megas"
-,,"¿Cómo se verá mi tienda en dispositivos móviles? ","Nuestras tiendas se ven muy bien en dispositivos móviles pero admitimos que la calidad no tan alta como en un browser. Además, como la plataforma es totalmente customizada, ¡un diseñador web puede ajustarla para que se vea aún mejor en dispositivos móviles!"
-,,"¿Puedo agregarle un blog a mi tienda?","Totalmente. Se puede integrar las plataformas blog como Tumblr y Wordpress sin problemas. "
-,,"¿Es simple incluir iconos de medios sociales?","La plataforma ya viene con los botones ""Me Gusta"" y ""Tweet"" en la página de cada producto, y estamos por agregar el botón ""Pin It"". Se puede agregar cualquier boton que quieras pero estamos muy interesados en saber cuales otros botones quieres que agregamos a todas las tiendas para que podamos hacerte la vida aún más facil!"
-,,"No puedo hacer ninguna accion automatica con el usuario una vez que compre?","Por el momento eso no es posible. La única alternativa que existe con cada nueva venta es hacer la acción manualmente, por ejemplo agregarlo manualmente a la lista de Mailchimp. "
-,,"Se puede customizar el mail que le llega al cliente confirmando su compra?","Estamos trabajando en hacer los mails customizables, de la misma forma que hoy se pueden customizar las páginas de tu tienda en esta sección: http://www.ombushop.com/admin/templates "
-,,"cómo difunden el trafico de ombushop? Qué hago para que la genta vea mis productos?","La plataforma se construyó con SEO en mente, las páginas son fácilmente indexables. Así que lo único que le pedimos a las tiendas es que publiquen la dirección de la misma cuando estén listos para vender.
+"Marketing","¿Ya armé mi tienda pero necesito ayuda para seguir, qué consejo me dan?","Puedes leer muchos consejos nuestros en el blog de OmbuShop. Si quieres ayuda con el marketing de tu tienda, ofrecemos servicios adicionales"
+"Contenido","¿Cómo pongo los productos en categorias?","Tienes que editar el producto y elegir las categorías en la pestaña a la izquierda que dice 'categorías'"
+"Contenido","¿Cuál es el tamaño máximo aceptado para las fotos de mis productos?","4 Megas. Recomendamos que cada una de las fotos pese menos de 1 Mega."
+"Diseño","¿Cómo se verá mi tienda en dispositivos móviles? ","Nuestras tiendas se ven muy bien en dispositivos móviles pero admitimos que la calidad no tan alta como en un browser. Además, como la plataforma es totalmente customizada, ¡un diseñador web puede ajustarla para que se vea aún mejor en dispositivos móviles!"
+"Contenido","¿Puedo agregarle un blog a mi tienda?","Totalmente. Se puede integrar las plataformas blog como Tumblr y Wordpress sin problemas. "
+"Marketing","¿Es simple incluir iconos de medios sociales?","La plataforma ya viene con los botones ""Me Gusta"" y ""Tweet"" en la página de cada producto, y estamos por agregar el botón ""Pin It"". Se puede agregar cualquier boton que quieras pero estamos muy interesados en saber cuales otros botones quieres que agregamos a todas las tiendas para que podamos hacerte la vida aún más facil!"
+"Marketing","¿Puedo hacer alguna acción automática con mi cliente una vez que compre?","Por el momento eso no es posible. La única alternativa que existe con cada nueva venta es hacer la acción manualmente, por ejemplo agregarlo manualmente a la lista de Mailchimp. "
+"Marketing","¿Se puede customizar el mail que le llega al cliente al confirmar su compra?","Estamos trabajando en hacer los mails customizables, de la misma forma que hoy se pueden customizar las páginas de tu tienda en esta sección: http://www.ombushop.com/admin/templates "
+"Marketing","¿Cómo difunden el tráfico a las tiendas de OmbuShop? Qué hago para que la genta vea mis productos?","La plataforma se construyó con SEO en mente, las páginas son fácilmente indexables. Así que lo único que le pedimos a las tiendas es que publiquen la dirección de la misma cuando estén listos para vender.
 
 Además, ofrecemos servicios VIP para manejar las campañas de publicidad online de las tiendas. Tratamos de ofrecerles algo accesibles a todos nuestros clientes, regardless of sus presupuestos por mes. 
 
 Por último, estamos trabajando en integraciones con Shopear, Vitryn y Pinterest, para dirigir tráfico de estas redes a las tiendas y así generar más ventas."
-,,"Estoy tratando de subir fotos de mis productos pero no puedo. ","Si la foto es demasiado grande la plataforma te muestra una página de error. Las fotos tienen que ser menos de 4 megas."
-,,"Cómo hago para poner los productos en las correspondientes categorias?","Tienes que editar el producto y elegir las categorías en la pestaña a la izquierda que dice 'categorías.'"
-,,"Cuando trato de registrarme, me dice ""correo no valido."" Qué pasa?","Muy de vez en cuando el sistema no entiende un correo. Si te pasa eso, escríbinos a hola@ombushop.com con el correo con lo cual quieres registrate y te lo solucionaremos."
-,,"Debo pagar impuestos IVA por los productos que vendo?","Depende de tu posición fiscal. Eso queda a cargo del dueño de la tienda."
-,,"Cómo hago para que aparezca un link a la home en la barra del menu?","Puedes agregar un <a href=""/products"">Productos</a> donde quieras
-6:52:49 PM Argentina (Cordoba) #8948: si, eso lo hice, pero no me salio ponerle un if antes, para que si estoy en esa seccion me tome la clase ""current-page""
-6:53:23 PM Claire Pelletreau: a ver.. me pasás la dirección de tu tienda? 
-6:54:28 PM Argentina (Cordoba) #8948: si, http://shop.27shops.com
-6:54:28 PM Argentina (Cordoba) #8948: [info] looking at http://www.ombushop.com/admin/templates/3940
-6:59:24 PM Claire Pelletreau: la comparación que deberías usar
-6:59:34 PM Claire Pelletreau: para chequear que estás viendo los productos
-6:59:38 PM Claire Pelletreau: es esta:  {% if current_path == '/' or current_path == '/products' %}
-7:00:58 PM Claire Pelletreau: class=""current-page""
-7:01:02 PM Claire Pelletreau: {% endif %}
+"Contenido","Estoy tratando de subir fotos de mis productos pero no puedo ¿Por qué? ","Si la foto es demasiado grande la plataforma te muestra una página de error. Las fotos tienen que pesar menos de 4 megas."
+"Contenido","¿Cómo hago para poner los productos en las correspondientes categorias?","Tienes que editar el producto y elegir las categorías en la pestaña a la izquierda que dice 'categorías.'"
+"Uso","Cuando trato de registrarme, me dice ""Correo no válido."" ¿Por qué?","Muy de vez en cuando el sistema no entiende un correo. Si te pasa eso, escríbinos a hola@ombushop.com con el correo con lo cual quieres registrate y te lo solucionaremos."
+"Operaciones","¿Debo pagar impuestos por la venta de mis productos?","Depende de tu posición fiscal. Eso queda a cargo del dueño de la tienda."
+"Programación","¿Cómo hago para que aparezca un link a la home en la barra del menu?","Puedes agregar un <a href=""/products"">Productos</a> donde quieras. Esto lo puedes hacer en tu panel de administración (Diseño > Templates > Editar)
+
 
 "
-,,"Tengo que tener una marca propia para vender en tu plataforma?","No, puedes vender lo que tengas el derecho legal de vender. SHOULD WE LINK TO SOMETHING OUTLINING THOSE GUIDELINES?"
-,,"El servicio tambien incluye servicio de entrega de los productos a los clientes?","Nuestro servicio es sólo la plataforma de ventas pero tenemos contactos que ofrecen servicios de entrega y te podemos ponerte en contacto con ellos. "
-,,"Después del término de prueba, cómo se cobra?","Después de los 15 días te pondremos en contacto contigo para ver si quieres seguir usando la plataforma y luego te enviaremos un cupón de pago a tu mail para pagar tu primer mes si quieres seguir. Nos puedes pagar con DineroMail, MercadoPago, o transferencia bancaria. "
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,"Common questions about Shopify"
-,,,"Getting Started"
-,,,
-,,,"What does Shopify do?"
-,,,"How do I install Shopify?"
-,,,"What do I need in order to start selling?"
-,,,"Can I use my own domain name with my shop?"
-,,,"Which countries and currencies are usable with Shopify?"
-,,,"Which languages are supported?"
-,,,"Designing Your Shop"
-,,,
-,,,
-,,,"Do I need to be a designer/programmer to change my shop design?"
-,,,"What is Liquid?"
-,,,"The Shopify Community"
-,,,
-,,,"Where can I discuss tips and techniques with other Shopify users?"
-,,,"Where can I find tutorials and guides?"
-,,,"Orders and Shipments"
-,,,
-,,,"What do I do when I get an order?"
-,,,"Can I get someone else to take care of shipping?"
-,,,"Accepting Payments"
-,,,
-,,,"What methods of payment can my customers use?"
-,,,"What is a merchant account?"
-,,,"What is a payment gateway?"
-,,,"What is a “third-party payment processor”?"
-,,,"Can I accept funds manually?"
-,,,"Your Account"
-,,,
-,,,"How much does Shopify cost?"
-,,,"How can I pay?"
-,,,"How do I get billed?"
+"Programación","¿Cómo puedo mostrar información en base a la dirección de la página?","  {% if current_path == '/' or current_path == '/products' %} Ahora te encuentras en la página de productos. {% endif %}"
+"Uso","¿Debo tener una marca propia para vender en la  plataforma?","No, puedes vender lo que tengas el derecho legal de vender. "
+"Uso","¿El servicio también incluye servicio de entrega de los productos a los clientes?","Nuestro servicio es sólo la plataforma de ventas pero tenemos contactos que ofrecen servicios de entrega y te podemos poner en contacto con ellos. "
+"Pagos","¿Después del término de prueba, cómo se cobra?","Después de los 15 días nos pondremos en contacto contigo para ver si quieres seguir usando la plataforma y luego te enviaremos un cupón de pago a tu mail para pagar tu primer mes si quieres seguir. Nos puedes pagar con DineroMail, MercadoPago, o transferencia bancaria. "
