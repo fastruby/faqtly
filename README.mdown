@@ -12,6 +12,10 @@
     cd faqtly
     bundle install
 
+## Setup Database
+
+    bundle exec rake sq:reset
+
 ## Start
 
     bundle exec shotgun
