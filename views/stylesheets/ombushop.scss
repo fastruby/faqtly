@@ -1,25 +1,83 @@
 @import "compass/css3";
 @import "bootstrap/mixins";
 
-.navbar-inner {
-  background-color: #128382;
-  @include gradient-vertical(#FFF, #FFF);
 
-  a.brand img {
-    width: 125px;
+/* ---------------------------------------------------- */
+/* OMBUSHOP FAQTLY - styles */
+
+/* ----------------------------- */
+/* GENERAL */
+
+body {
+  background: #e0efec;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #55595F;
+  line-height: 160%;
+  text-shadow: 0 1px 0 #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #128382;
+  font-family: 'Cabin', arial, serif;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+a {
+  color: #0E84C4;
+  &:visited {
+    color: #084F75;
+  }
+  &:hover {
+    color: #1099E4;
   }
 }
+h3 a {
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #1099E4;
+  }
+}
+
+/* ----------------------------- */
+/* HEADER */
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
   background-color: transparent;
   color: #2BA47B;
   text-decoration: underline;
 }
-
 .navbar .nav > li > a.link {
   padding-top: 30px;
 }
+.navbar-inner {
+  div.container {
+    height: 100px
+  }
+}
+div.navbar div.navbar-inner {
+  background-color: #128382;
+  @include gradient-vertical(#FFF, #FFF);
+  a.brand {
+    padding-top: 20px;
+    img {
+      width: 195px;
+    }   
+  } 
+}
 
-.container {
-  margin-top: 5em;
+/* ----------------------------- */
+/* CONTENT */
+
+body > div.container {
+  padding-top: 100px;
+}
+div.actions {
+  .btn {
+    display: block;
+    margin-bottom: 4px;
+  }
 }
