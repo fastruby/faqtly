@@ -74,10 +74,42 @@ div.navbar div.navbar-inner {
 
 body > div.container {
   padding-top: 100px;
+  h1 {
+    font-size: 35px;
+    border-bottom: 1px solid #d0ddbb;
+    -webkit-box-shadow: 0 1px 0 #fff;
+    -moz-box-shadow:    0 1px 0 #fff;
+    -ms-box-shadow:     0 1px 0 #fff;
+    -o-box-shadow:      0 1px 0 #fff;
+    box-shadow:         0 1px 0 #fff;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+  }
+  h3 {
+    font-size: 21px;
+  }
 }
 div.actions {
+  width: 160px;
+  text-align: right;
   .btn {
-    display: block;
+    display: inline-block;
     margin-bottom: 4px;
+    margin-right: 4px;
   }
+  form {
+    display: inline;
+  }
+}
+div.row.question {
+  border-bottom: 1px solid #d0ddbb;
+  -webkit-box-shadow: 0 1px 0 #fff;
+  -moz-box-shadow:    0 1px 0 #fff;
+  -ms-box-shadow:     0 1px 0 #fff;
+  -o-box-shadow:      0 1px 0 #fff;
+  box-shadow:         0 1px 0 #fff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 300px;
+  padding-bottom: 20px;
 }
