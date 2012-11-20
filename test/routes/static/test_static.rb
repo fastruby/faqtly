@@ -24,7 +24,7 @@ class TestMain < Test::Unit::TestCase
     @question = Question.create( question: 'Y candela? Y la moto?',
                       answer:   'alot' )
 
-    get "/questions/search?q=candela"
+    get "/preguntas/search?q=candela"
     assert_equal 200, last_response.status
     assert last_response.body.include?("la moto")
   end  
@@ -33,7 +33,7 @@ class TestMain < Test::Unit::TestCase
     @question = Question.create( question: 'What would Steve Jobs do?',
                       answer: 'He would probably Stay hungry Stay foolish.' )
 
-    get "/questions/#{@question.permalink}"
+    get "/preguntas/#{@question.permalink}"
     assert_equal 200, last_response.status
     assert last_response.body.include?('Steve Jobs')
   end

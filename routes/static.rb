@@ -16,18 +16,18 @@ module Routes
       haml :about, layout: :'layouts/application'
     end
 
-    get '/questions' do
+    get '/preguntas' do
       @questions = Question.all
       haml :'questions/index', layout: :'layouts/application'
     end
 
-    get '/questions/search' do
+    get '/preguntas/search' do
       @query = params[:q]
       @questions = Question.full_text_search(@query)
       haml :'questions/index', layout: :'layouts/application'
     end  
 
-    get %r{/questions/(.*)} do |permalink|
+    get %r{/preguntas/(.*)} do |permalink|
       @question = find_question(permalink)
       haml :'questions/show', layout: :'layouts/application'
     end
