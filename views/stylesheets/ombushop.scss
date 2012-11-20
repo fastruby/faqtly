@@ -1,6 +1,11 @@
 @import "compass/css3";
 @import "bootstrap/mixins";
 
+@mixin linea-bajorelieve {
+  border-bottom: 1px solid #d0ddbb;
+  @include single-box-shadow(#fff, 0, 1px, 0);
+}
+
 
 /* ---------------------------------------------------- */
 /* OMBUSHOP FAQTLY - styles */
@@ -121,12 +126,7 @@ body > div.container {
   padding-top: 100px;
   h1 {
     font-size: 35px;
-    border-bottom: 1px solid #d0ddbb;
-    -webkit-box-shadow: 0 1px 0 #fff;
-    -moz-box-shadow:    0 1px 0 #fff;
-    -ms-box-shadow:     0 1px 0 #fff;
-    -o-box-shadow:      0 1px 0 #fff;
-    box-shadow:         0 1px 0 #fff;
+    @include linea-bajorelieve;
     margin-bottom: 40px;
     padding-bottom: 14px;
   }
@@ -147,14 +147,29 @@ div.actions {
   }
 }
 div.row.question {
-  border-bottom: 1px solid #d0ddbb;
-  -webkit-box-shadow: 0 1px 0 #fff;
-  -moz-box-shadow:    0 1px 0 #fff;
-  -ms-box-shadow:     0 1px 0 #fff;
-  -o-box-shadow:      0 1px 0 #fff;
-  box-shadow:         0 1px 0 #fff;
+  @include linea-bajorelieve;
   margin-top: 10px;
   margin-bottom: 30px;
   margin-right: 300px;
   padding-bottom: 20px;
+}
+
+/* ----------------------------- */
+/* FORMS */
+
+form {
+  legend {
+    @include linea-bajorelieve;
+    color: #128382;
+    font-family: 'Cabin', arial, serif;
+    font-weight: normal;
+    font-size: 23px;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  div.control-group:last-child {
+    width: 680px;
+  }
 }
