@@ -46,6 +46,10 @@ h3 a {
     color: #1099E4;
   }
 }
+[class^="icon-"], [class*=" icon-"] {
+  /* arreglar la ruta a los iconos de bootstrap */
+  background-image: url('/images/glyphicons-halflings.png');
+}
 
 /* ----------------------------- */
 /* HEADER */
