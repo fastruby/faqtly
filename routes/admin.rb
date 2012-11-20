@@ -16,7 +16,7 @@ module Routes
       @question = Question.new(params[:question])
 
       if @question.save
-        redirect to('/questions')
+        redirect to('/preguntas')
       else
         haml :'questions/new', layout: :'layouts/application'
       end
@@ -34,7 +34,7 @@ module Routes
       @question = find_question(permalink)
 
       if @question.update(params[:question])
-        redirect to('/questions')
+        redirect to('/preguntas')
       else
         haml :"questions/edit", layout: :'layouts/application'
       end
