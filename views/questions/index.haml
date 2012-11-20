@@ -16,7 +16,7 @@
         %a{ href: "/preguntas/#{q.permalink}"}= q.question
       %p= q.answer
     .span1.small.actions
-      %a{ href: "/questions/#{q.permalink}/edit", class: 'btn'}= t(:edit)
+      %a{ href: "/questions/#{q.permalink}/edit", class: 'btn'}= '<i class="icon-edit"></i> '+t(:edit)
       %form{ action: "/questions/#{q.permalink}", method: 'post'}
         %input{ type: 'hidden', name: '_method', value: 'delete'}
-        %input{ type: 'submit', value: t(:delete) , class: 'btn btn-danger'}
+        %button{ type: 'submit', class: 'btn btn-danger' }= '<i class="icon-remove icon-white"></i> '+t(:delete)

@@ -50,6 +50,9 @@ h3 a {
   /* arreglar la ruta a los iconos de bootstrap */
   background-image: url('/images/glyphicons-halflings.png');
 }
+.icon-white {
+  background-image: url("/images/glyphicons-halflings-white.png");
+}
 
 /* ----------------------------- */
 /* HEADER */
@@ -139,7 +142,7 @@ body > div.container {
   }
 }
 div.actions {
-  width: 160px;
+  width: 180px;
   text-align: right;
   .btn {
     display: inline-block;
@@ -169,6 +172,9 @@ div.row.question {
   margin-bottom: 30px;
   margin-right: 300px;
   padding-bottom: 20px;
+  div.span6 {
+    width: 440px;
+  }
 }
 
 /* ----------------------------- */
