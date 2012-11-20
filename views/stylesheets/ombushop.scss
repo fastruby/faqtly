@@ -146,6 +146,19 @@ div.actions {
     display: inline;
   }
 }
+p.search-string {
+  background-color: #ffffdf;
+  width: 600px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  font-size: 16px;
+  strong {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
 div.row.question {
   @include linea-bajorelieve;
   margin-top: 10px;
