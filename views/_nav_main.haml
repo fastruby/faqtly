@@ -6,7 +6,7 @@
           %a.brand{:href => "/", title: 'OmbuShop. Preguntas y Respuestas.'}
             %img{src: '/images/ombushop-tutiendaonline-logo.png', alt: 'OmbuShop, Tu Tienda Online'}
         %li{class: 'nav-item'}
-          %a.link{href: '/about'}= t(:about)
+          %a.link{href: '/about'}= t(:'about.title')
         - if can?
           %li{class: 'nav-item'}
             %a.link{href: '/questions/new'}= t(:'questions.ask')
