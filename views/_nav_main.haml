@@ -7,10 +7,11 @@
             %img{src: '/images/ombushop-tutiendaonline-logo.png', alt: 'OmbuShop, Tu Tienda Online'}
         %li{class: 'nav-item'}
           %a.link{href: '/about'}= t(:about)
-        %li{class: 'nav-item'}
-          %a.link{href: '/questions/new'}= t(:'questions.ask')
-        %li{class: 'nav-item'}
-          %a.link{href: '/tags/new'}= t(:'tags.add')          
+        - if can?
+          %li{class: 'nav-item'}
+            %a.link{href: '/questions/new'}= t(:'questions.ask')
+          %li{class: 'nav-item'}
+            %a.link{href: '/tags/new'}= t(:'tags.add')
       %form#search{class: "navbar-search pull-right form-search", action: "/preguntas/search"}
         %input#text{name: 'q', placeholder: t(:search_placeholder), class: "search-query input-medium", value: @query}
         %button{style: 'display:none'}= t(:search)

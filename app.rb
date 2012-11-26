@@ -1,7 +1,6 @@
 require_relative 'lib/permalinker'
 require_relative 'config/environment'
 
-
 class Faqtly < Sinatra::Application
   # HTTP Authentication
   set :sessions => true
