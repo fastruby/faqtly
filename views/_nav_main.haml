@@ -10,9 +10,9 @@
         %li{class: 'nav-item'}
           %a.link{href: '/preguntas'}= t(:'questions.title')
         %li{class: 'nav-item'}
-          %a.link{href: '/about'}= t(:about)
+          %a.link{href: '/about'}= t(:'about.title')
         - if can? 
-          %li
+          %li{class: 'nav-item'}
             %a.link{href: '/questions/new'}= t(:'questions.ask')
           %li{class: 'nav-item'}
             %a.link{href: '/tags/new'}= t(:'tags.add')

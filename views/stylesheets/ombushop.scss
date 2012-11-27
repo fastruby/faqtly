@@ -153,7 +153,7 @@ div.actions {
     display: inline;
   }
 }
-p.search-string {
+.search-string {
   background-color: #ffffdf;
   width: 600px;
   padding: 15px 20px;
@@ -195,5 +195,20 @@ form {
   }
   div.control-group:last-child {
     width: 680px;
+  }
+}
+
+/* ----------------------------- */
+/* FOOTER */
+
+footer.footer {
+  background-color: white;
+  
+  .container {
+    text-align: center;
+    background-color: white;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+
   }
 }
