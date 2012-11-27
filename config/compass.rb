@@ -1,4 +1,3 @@
-require './app'
 require 'grid-coordinates'
 # Require any additional compass plugins here.
 

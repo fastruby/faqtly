@@ -4,7 +4,7 @@ require 'test_helper'
 
 class TestQuestions < Test::Unit::TestCase
   def app
-    Faqtly
+    Faqtly::App
   end
 
   def test_create_a_question

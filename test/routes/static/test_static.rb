@@ -2,7 +2,7 @@ require 'test_helper'
 
 class TestMain < Test::Unit::TestCase
   def app
-    Faqtly
+    Faqtly::App
   end
 
   def test_root

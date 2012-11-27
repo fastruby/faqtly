@@ -1,3 +1,5 @@
 puts "Loading production environment"
 
-Sequel.connect(ENV['DATABASE_URL'])
+url = ENV['DATABASE_URL'] || "postgres://postgres:0mbu@localhost/faqtly"
+
+Sequel.connect(url)

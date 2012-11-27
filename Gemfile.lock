@@ -1,3 +1,24 @@
+PATH
+  remote: .
+  specs:
+    faqtly (1.0)
+      chronic
+      compass (~> 0.11.6)
+      grid-coordinates (~> 1.1.4)
+      haml (~> 3.1.4)
+      httparty (~> 0.8.1)
+      i18n
+      nokogiri (~> 1.5.0)
+      pg (~> 0.13.2)
+      rack-flash3
+      sass (~> 3.1.12)
+      sequel
+      sequel_pg
+      shotgun (~> 0.9)
+      sinatra (~> 1.2.3)
+      sinatra-support
+      thin
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -8,6 +29,7 @@ GEM
     addressable (2.3.2)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
+    chronic (0.8.0)
     chunky_png (1.2.6)
     coderay (1.0.8)
     columnize (0.3.6)
@@ -39,13 +61,18 @@ GEM
       rubyzip
     heroku-api (0.3.5)
       excon (~> 0.16.1)
+    httparty (0.8.3)
+      multi_json (~> 1.0)
+      multi_xml
     i18n (0.6.1)
     launchy (2.1.2)
       addressable (~> 2.3)
     method_source (0.8)
     mime-types (1.19)
     multi_json (1.3.6)
+    multi_xml (0.5.1)
     netrc (0.7.7)
+    nokogiri (1.5.5)
     pg (0.13.2)
     pry (0.9.10)
       coderay (~> 1.0.5)
@@ -64,8 +91,8 @@ GEM
       mime-types (>= 1.16)
     rubyzip (0.9.9)
     sass (3.1.21)
-    sequel (3.40.0)
-    sequel_pg (1.6.0)
+    sequel (3.41.0)
+    sequel_pg (1.6.2)
       pg (>= 0.8.0)
       sequel (>= 3.39.0)
     shotgun (0.9)
@@ -88,24 +115,12 @@ PLATFORMS
 
 DEPENDENCIES
   autotest
-  compass (~> 0.11.6)
   debugger
   factory_girl
-  grid-coordinates (~> 1.1.4)
-  haml (~> 3.1.4)
+  faqtly!
   heroku
-  i18n
-  pg (= 0.13.2)
   pry
   pry-nav
-  rack-flash3
   rack-test
   rake
-  sass (~> 3.1.12)
-  sequel
-  sequel_pg
-  shotgun (~> 0.9)
-  sinatra (~> 1.2.3)
-  sinatra-support
   sqlite3
-  thin
