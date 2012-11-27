@@ -1,5 +1,6 @@
 require_relative 'lib/permalinker'
 require_relative 'config/environment'
+require 'rack-flash'
 
 class Faqtly < Sinatra::Application
   # HTTP Authentication
@@ -15,6 +16,7 @@ class Faqtly < Sinatra::Application
 
   set :default_locale, 'es'
   use Rack::MethodOverride
+  use Rack::Flash, :sweep => true
 
   configure :production, :development do
     enable :logging

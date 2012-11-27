@@ -61,10 +61,7 @@ Por último, estamos trabajando en integraciones con Shopear, Vitryn y Pinterest
 "Contenido","¿Cómo hago para poner los productos en las correspondientes categorias?","Tienes que editar el producto y elegir las categorías en la pestaña a la izquierda que dice 'categorías.'"
 "Uso","Cuando trato de registrarme, me dice ""Correo no válido."" ¿Por qué?","Muy de vez en cuando el sistema no entiende un correo. Si te pasa eso, escríbinos a hola@ombushop.com con el correo con lo cual quieres registrate y te lo solucionaremos."
 "Operaciones","¿Debo pagar impuestos por la venta de mis productos?","Depende de tu posición fiscal. Eso queda a cargo del dueño de la tienda."
-"Programación","¿Cómo hago para que aparezca un link a la home en la barra del menu?","Puedes agregar un <a href=""/products"">Productos</a> donde quieras. Esto lo puedes hacer en tu panel de administración (Diseño > Templates > Editar)
-
-
-"
+"Programación","¿Cómo hago para que aparezca un link a la home en la barra del menu?","Puedes agregar un <a href=""/products"">Productos</a> donde quieras. Esto lo puedes hacer en tu panel de administración (Diseño > Templates > Editar)"
 "Programación","¿Cómo puedo mostrar información en base a la dirección de la página?","  {% if current_path == '/' or current_path == '/products' %} Ahora te encuentras en la página de productos. {% endif %}"
 "Uso","¿Debo tener una marca propia para vender en la  plataforma?","No, puedes vender lo que tengas el derecho legal de vender. "
 "Uso","¿El servicio también incluye servicio de entrega de los productos a los clientes?","Nuestro servicio es sólo la plataforma de ventas pero tenemos contactos que ofrecen servicios de entrega y te podemos poner en contacto con ellos. "

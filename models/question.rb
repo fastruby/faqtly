@@ -17,9 +17,11 @@ class Question < Sequel::Model
   # It searches through question and answer content.
   # 
   # @return [Array]
-  def self.full_text_search(query)
-    Question.where(Sequel.like(:answer, "%#{query}%")).
+  def self.full_text_search(query, params = {})
+    scope = Question.where(Sequel.like(:answer, "%#{query}%")).
                   or(Sequel.like(:question, "%#{query}%"))
+
+    self.paginated(params.merge(scope: scope))
     # TODO full_text_search('answer', query)
   end
 
@@ -28,6 +30,13 @@ class Question < Sequel::Model
   # @return [Question,nil]
   def self.find_by_permalink(permalink)
     Question.where(permalink: permalink).first
+  end
+
+  def self.paginated(params = {})
+    scope = params[:scope] || Question
+    page = params[:page] || 1
+    per_page = params[:per_page] || 2
+    scope.paginate(page.to_i, per_page.to_i)
   end
 
   private
