@@ -35,7 +35,7 @@ class Question < Sequel::Model
   def self.paginated(params = {})
     scope = params[:scope] || Question
     page = params[:page] || 1
-    per_page = params[:per_page] || 2
+    per_page = params[:per_page] || 10
     scope.paginate(page.to_i, per_page.to_i)
   end
 
