@@ -229,13 +229,24 @@ form {
 /* FOOTER */
 
 footer.footer {
-  background-color: white;
+  background: #4a382f;
+  @include single-box-shadow(rgba(0, 0, 0, .3), 0, -2px, 3px);
   
   .container {
     text-align: center;
-    background-color: white;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
-
+    color: #F2F9F4;
+    @include single-text-shadow(rgba(0,0,0,0.3), 0, -1px, 0);
+    a {
+      color: #ffffdf;
+    }
+    .footer-logo {
+      background: url('http://www.ombushop.com/images/ombu-logo-footer.png') #4a382f top left no-repeat;
+      text-indent: -20000px;
+      width: 46px;
+      height: 46px;
+      margin: 10px auto 0 auto;
+    }
   }
 }
