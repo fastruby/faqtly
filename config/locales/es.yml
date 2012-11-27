@@ -16,7 +16,7 @@
     ask: "Hacer Pregunta"
     asking: "Haciendo una Pregunta"
     title: "Preguntas"
-  searching_for: "Buscando: %{q}"
+  searching_for: "Buscando: <strong>%{q}</strong>"
   tags:
     add: "Crear Etiqueta"
     adding: "Agregando una etiqueta"

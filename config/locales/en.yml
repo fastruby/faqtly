@@ -17,7 +17,7 @@
     ask: "Ask a Question"
     asking: "Asking a Question"
     title: "Questions"    
-  searching_for: "Searching for: %{q}"    
+  searching_for: "Searching for: <strong>%{q}</strong>"    
   tags:
     add: "Add a Tag"
     adding: "Adding a Tag"
