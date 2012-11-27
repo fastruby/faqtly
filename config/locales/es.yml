@@ -1,5 +1,4 @@
 "es":
-  about: "Ayuda"
   back: "Volver"
   create: "Create"
   delete: "Eliminar"
@@ -14,15 +13,15 @@
   previous: "Página anterior"
   question_placeholder: "Ingresa la Pregunta"
   questions:
-    ask: "Hacer una Pregunta"
+    ask: "Hacer Pregunta"
     asking: "Haciendo una Pregunta"
     title: "Preguntas"
   searching_for: "Buscando: %{q}"
   tags:
-    add: "Crear una Etiqueta"
-    adding: "Agregando un Tag"
+    add: "Crear Etiqueta"
+    adding: "Agregando una etiqueta"
     questions: "Preguntas con etiqueta %{name}"
-    title: "Tags"    
+    title: "Categorías"    
   response: "Respuesta"
   response_placeholder: "La respuesta es..."
   search_placeholder: "Buscar..."
