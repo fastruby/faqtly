@@ -1,2 +1,2 @@
-%a{href: "#{request.path}?page=#{page+1}"}
-  = t(:next)
+%a{href: "#{request.path}?page=#{page+1}", class: "next btn"}
+  = t(:next) + ' <i class="icon-chevron-right"></i>'

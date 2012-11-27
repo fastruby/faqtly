@@ -177,6 +177,24 @@ div.row.question {
     width: 440px;
   }
 }
+div.pagination {
+  a{
+    &:hover {
+      background-color: #E6E6E6;
+    }
+    &.next {
+      @include border-right-radius(8px);
+      @include border-left-radius(0);
+    }
+    &.previous {
+      @include border-left-radius(8px);
+      @include border-right-radius(0);
+    }
+    i[class^="icon-"] {
+      background-image: url('/images/glyphicons-halflings.png');
+    }
+  }
+}
 
 /* ----------------------------- */
 /* FORMS */

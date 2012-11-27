@@ -4,7 +4,7 @@
   %a{href: '/questions/new'}= t(:'questions.ask')
 
 - @questions.each do |q|
-  .row
+  .row.question
     .span6
       %h3
         %a{ href: "/preguntas/#{q.permalink}"}= q.question
