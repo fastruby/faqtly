@@ -3,14 +3,15 @@ require 'grid-coordinates'
 
 
 # Set this to the root of your project when deployed:
-http_path = "/"
-css_dir = "public/stylesheets"
-http_stylesheets_path = "/stylesheets"
-sass_dir = "views/stylesheets"
-images_dir = "public/images"
-http_images_path = "/images"
-javascripts_dir = "public/javascripts"
-http_javascripts_path = "/javascripts"
+# http_path = "/"
+# css_dir = File.join(Sinatra::Application.root, '..', 'public', 'stylesheets')
+
+# http_stylesheets_path = "/stylesheets"
+# sass_dir = "views/stylesheets"
+# images_dir = "public/images"
+# http_images_path = "/images"
+# javascripts_dir = "public/javascripts"
+# http_javascripts_path = "/javascripts"
 
 output_style = :expanded
 

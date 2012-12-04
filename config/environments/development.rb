@@ -1,3 +1,5 @@
 puts "Loading development"
 
-DB = Sequel.sqlite 'faqtly_development.db'
+url = ENV['DATABASE_URL'] || "postgres://postgres@localhost/faqtly_development"
+
+Sequel.connect(url)
