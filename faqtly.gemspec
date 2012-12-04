@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "faqtly"
 
+  s.add_dependency 'i18n'
   s.add_dependency 'httparty', '~> 0.8.1'
   s.add_dependency 'nokogiri', '~> 1.5.0'
   s.add_dependency 'chronic'
