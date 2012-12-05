@@ -34,10 +34,10 @@ module Routes
       haml :'questions/show', layout: :'layouts/application'
     end
 
-    get 'stylesheets/:name.css' do
-      content_type 'text/css', :charset => 'utf-8'
-      scss(:"stylesheets/#{params[:name]}", Compass.sass_engine_options)
-    end
+    # get '/stylesheets/:name.css' do
+    #   content_type 'text/css', :charset => 'utf-8'
+    #   scss(:"stylesheets/#{params[:name]}", Compass.sass_engine_options)
+    # end
 
     get '/tags' do
       @tags = Tag.all
