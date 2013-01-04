@@ -66,6 +66,6 @@ Por último, estamos trabajando en integraciones con Shopear, Vitryn y Pinterest
 
 "
 "Programación","¿Cómo puedo mostrar información en base a la dirección de la página?","  {% if current_path == '/' or current_path == '/products' %} Ahora te encuentras en la página de productos. {% endif %}"
-"Uso","¿Debo tener una marca propia para vender en la  plataforma?","No, puedes vender lo que tengas el derecho legal de vender. "
+"Uso","¿Debo tener una marca propia para vender en la  plataforma?","No, puedes vender lo que tengas el derecho legal de vender, siempre y cuando no esté prohibido por la ley aplicable."
 "Uso","¿El servicio también incluye servicio de entrega de los productos a los clientes?","Nuestro servicio es sólo la plataforma de ventas pero tenemos contactos que ofrecen servicios de entrega y te podemos poner en contacto con ellos. "
 "Pagos","¿Después del término de prueba, cómo se cobra?","Después de los 15 días nos pondremos en contacto contigo para ver si quieres seguir usando la plataforma y luego te enviaremos un cupón de pago a tu mail para pagar tu primer mes si quieres seguir. Nos puedes pagar con DineroMail, MercadoPago, o transferencia bancaria. "
