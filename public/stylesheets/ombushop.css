@@ -152,7 +152,7 @@ body > div.container h1 {
   margin-bottom: 40px;
   padding-bottom: 14px;
 }
-body > div.container h3 {
+body > div.container h3, body > div.container h2 {
   font-size: 21px;
 }
 
@@ -197,7 +197,7 @@ div.row.question {
   padding-bottom: 20px;
 }
 div.row.question div.span6 {
-  width: 440px;
+  width: 659px;
 }
 
 div.pagination a:hover {
