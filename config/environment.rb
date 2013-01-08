@@ -12,4 +12,4 @@ def database_connect(database_name, username, password, database_type = 'postgre
   result << "SET CLIENT_ENCODING TO 'UTF8';"
 end
 
-require_relative "environments/#{ENV['RAILS_ENV']}"
+require_relative "environments/#{ENV['RAILS_ENV'] || Sinatra::Base.environment}"
