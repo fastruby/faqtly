@@ -21,9 +21,15 @@ module Faqtly
     # 
     # @param [Question,nil] 
     # @return [String] Page title
-    def page_title(question)
-      title = "OmbuShop, Tu Tienda Online. Preguntas y Respuestas. "
-      title += question.question.to_s if question
+    def page_title(question = nil, tag = nil)
+      if question
+        title = question.question.to_s
+      elsif tag
+        title = "Preguntas Frecuentes: #{tag.name.to_s}."
+      else
+        title = "OmbuShop, Tu Tienda Online. Preguntas Frecuentes."
+      end
+
       title
     end
 
