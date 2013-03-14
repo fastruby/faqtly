@@ -11,11 +11,11 @@ module Faqtly
   class App < Sinatra::Application
 
     # HTTP Authentication
-    set :sessions => true
+    set sessions: true
 
     # HAML / SASS
-    set :haml, {:format => :html5, :escape_html => true}
-    set :scss, {:style => :compact, :debug_info => false}
+    set :haml, {format: :html5, escape_html: true}
+    set :scss, {style: :compact, debug_info: false}
 
     # I18n
     register Sinatra::I18nSupport
@@ -28,7 +28,7 @@ module Faqtly
     
     set :default_locale, 'es'
     use Rack::MethodOverride
-    use Rack::Flash, :sweep => true
+    use Rack::Flash, sweep: true
 
     helpers Rack::Utils
     helpers Faqtly::Authentication

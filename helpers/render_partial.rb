@@ -14,7 +14,7 @@ module Faqtly
     end
 
     def partial(page, options={})
-      haml page, options.merge!(:layout => false), options[:locals]
+      haml page, options.merge!(layout: false), options[:locals]
     end
 
     # Calculates the page title using a question. 
