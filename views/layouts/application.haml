@@ -14,7 +14,6 @@
     %link{href: 'http://fonts.googleapis.com/css?family=PT+Sans', rel: 'stylesheet', type: 'text/css'}
     / STYLES
     %link{:href=> u('stylesheets/bootstrap.css'), :media => "screen", :rel => 'stylesheet', :type => "text/css"}
-    %link{:href=> u('stylesheets/application.css'), :media => "screen", :rel => 'stylesheet', :type => "text/css"}
     %link{:href=> u('stylesheets/ombushop.css'), :media => "screen", :rel => 'stylesheet', :type => "text/css"}    
     %link{:rel=> "stylesheet", :type => "text/css", :media => "screen", 
             :href => u("stylesheets/bootstrap-wysihtml5.css")}
@@ -27,35 +26,38 @@
     %script{:async => "", :src => "http://www.google-analytics.com/ga.js", :type => "text/javascript"}
 
   %body
-    = partial :_nav_main
+    #outer-container
+      = partial :_nav_main
 
-    .container
-      = partial :_notices
-      = yield
-    = partial :_analytics
-    %footer.footer
-      / .navbar.navbar-fixed-bottom
-      /   .navbar-inner
       .container
-        Copyright 2012, 
-        %a{href: "http://www.ombushop.com", title: "Tu Tienda Online"}
-          OmbuShop.com
-        \|
-        %a{href: "http://www.ombushop.com", title: "Tu Tienda Online"}
-          Crea Tu Tienda Virtual Hoy
-        \| Lovingly crafted by 
-        %a{href: "http://www.ombushop.com/quienes-somos", title: "Team OmbuShop"}
-          these guys
-        .footer-logo
-          = "OmbuShop"
-      :javascript
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-18017766-1']);
-        _gaq.push(['_setDomainName', '.ombushop.com']);
-        _gaq.push(['_trackPageview']);
+        = partial :_notices
+        = yield
 
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
+      = partial :_analytics
+
+      %footer.footer
+        / .navbar.navbar-fixed-bottom
+        /   .navbar-inner
+        .container
+          Copyright 2012, 
+          %a{href: "http://www.ombushop.com", title: "Tu Tienda Online"}
+            OmbuShop.com
+          \|
+          %a{href: "http://www.ombushop.com", title: "Tu Tienda Online"}
+            Crea Tu Tienda Virtual Hoy
+          \| Lovingly crafted by 
+          %a{href: "http://www.ombushop.com/quienes-somos", title: "Team OmbuShop"}
+            these guys
+          .footer-logo
+            = "OmbuShop"
+        :javascript
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-18017766-1']);
+          _gaq.push(['_setDomainName', '.ombushop.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();

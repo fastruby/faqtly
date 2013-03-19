@@ -5,8 +5,8 @@
 
 - @questions.each do |q|
   .row.question
-    .span6
-      %h3
+    .contenido
+      %h2
         %a{ href: u("preguntas/#{q.permalink}")}= q.question
       %p= q.answer
     -if can?

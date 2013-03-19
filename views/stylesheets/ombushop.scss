@@ -1,4 +1,6 @@
+@import "compass/reset";
 @import "compass/css3";
+@import "compass/css3/box-shadow";
 @import "bootstrap/mixins";
 
 @mixin linea-bajorelieve {
@@ -13,13 +15,31 @@
 /* ----------------------------- */
 /* GENERAL */
 
+.container {
+  a.brand {
+    font-family: 'PT Sans', sans-serif;
+  }
+  margin-top: 4em;
+}
+
+.navbar {
+  .container {
+    margin-top: 0em;
+  }
+}
+
+html {
+   margin:0;
+   padding:0;
+   height:100%;
+}
 body {
-  /* background: #e0efec; */
-  background: #000;
+  background: #e0efec;
   font-family: Helvetica, Arial, sans-serif;
   color: #55595F;
   line-height: 160%;
   text-shadow: 0 1px 0 #fff;
+  height:100%;
 }
 h1, h2, h3, h4, h5, h6 {
   color: #128382;
@@ -37,7 +57,11 @@ a {
     color: #1099E4;
   }
 }
-h3 a {
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+h2 a, h3 a {
   color: inherit;
   &:visited {
     color: inherit;
@@ -54,6 +78,10 @@ h3 a {
 .icon-white {
   background-image: url("/images/glyphicons-halflings-white.png");
 }
+#outer-container {
+  min-height:100%;
+  position:relative;
+}
 
 /* ----------------------------- */
 /* HEADER */
@@ -65,8 +93,9 @@ h3 a {
   padding: 0;
   margin-top: 20px;
   a {
-    @include border-radius(7px);
+    @include border-radius(7px); 
     color: #859C9C;
+    color: #444;
     display: block;
     font-size: 12px;
     font-weight: bold;
@@ -78,13 +107,12 @@ h3 a {
     &:hover {
       background: #e0efec;
       color: darken(#859C9C, 10%);
+      @include box-shadow(rgba(255,255,255,.5) 0 13px 10px inset);
     }
     &:active {
       background: darken(#e0efec, 5%);
       color: darken(#859C9C, 20%);
-      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) inset;
-      -moz-box-shadow:    0 1px 2px rgba(0, 0, 0, 0.2) inset;
-      box-shadow:         0 1px 2px rgba(0, 0, 0, 0.2) inset;   
+      box-shadow: rgba(0, 0, 0,.1) 0 1px 2px inset, rgba(255,255,255,.7) 0 13px 10px inset;
     }
   }
 }
@@ -130,15 +158,16 @@ div.navbar div.navbar-inner {
 /* ----------------------------- */
 /* CONTENT */
 
-body > div.container {
+body > #outer-container > div.container {
   padding-top: 100px;
+  padding-bottom: 130px;
   h1 {
     font-size: 35px;
     @include linea-bajorelieve;
     margin-bottom: 40px;
     padding-bottom: 14px;
   }
-  h3 {
+  h2 {
     font-size: 21px;
   }
 }
@@ -163,6 +192,7 @@ div.actions {
   border: none;
   margin-bottom: 40px;
   margin-top: -20px;
+  margin-left: -20px;
   font-size: 16px;
   strong {
     font-weight: bold;
@@ -170,15 +200,21 @@ div.actions {
     color: #ff8c2f;
   }
 }
+.row {
+  margin-left: 0;
+}
 div.row.question {
   @include linea-bajorelieve;
   margin-top: 10px;
   margin-bottom: 30px;
   margin-right: 300px;
   padding-bottom: 20px;
-  div.span6 {
-    width: 440px;
+  div.contenido {
+    width: 659px;
   }
+}
+div.row.show {
+  width: 700px;
 }
 div.pagination {
   a{
@@ -232,11 +268,16 @@ form {
 footer.footer {
   background: #4a382f;
   @include single-box-shadow(rgba(0, 0, 0, .3), 0, -2px, 3px);
+  width:100%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
   
   .container {
     text-align: center;
     padding-top: 1.3em;
     padding-bottom: 1.3em;
+    margin-top: 0;
     color: #F2F9F4;
     @include single-text-shadow(rgba(0,0,0,0.3), 0, -1px, 0);
     a {
