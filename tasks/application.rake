@@ -17,6 +17,8 @@ task :seed => :environment do
     tag_name = row[0]
     question = row[1]
     answer = row[2]
+    description = row[3]
+    keywords = row[4]
     unless answer.start_with? "<p>"
       answer = "<p>#{answer}</p>"
     end
@@ -24,7 +26,8 @@ task :seed => :environment do
     tag = Tag.where(name: tag_name).first
     tag = Tag.new(name: tag_name).save unless tag
     
-    q = Question.new(question: question, answer: answer)
+    q = Question.new(question: question, answer: answer, 
+                      description: description, keywords: keywords)
     q.save
     q.add_tag(tag)
 

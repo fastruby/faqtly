@@ -31,6 +31,8 @@ module Routes
 
     get %r{/preguntas/(.*)} do |permalink|
       @question = find_question(permalink)
+      @description = @question.description
+      @keywords = @question.keywords
       haml :'questions/show', layout: :'layouts/application'
     end
 

@@ -1,29 +1,31 @@
 !!!
 %html{html_attrs}
   %head
-    %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
-    %meta{:name => "lang", :content => "es"}
+    %meta{:'http-equiv' => "Content-Type", content: "text/html; charset=utf-8"}
+    %meta{name: "lang", content: "es"}
+    %meta{name: "description", content: @description}
+    %meta{name: "keywords", content: @keywords}
 
     %title= page_title(@question, @tag)
 
     / FAVICON
-    %link{:href => u("images/favicon.png"), :rel => "icon", :type => "image/png"}
-    %link{:href => u("favicon.ico"), :rel => "shortcut icon"}
+    %link{href: u("images/favicon.png"), rel: "icon", type: "image/png"}
+    %link{href: u("favicon.ico"), rel: "shortcut icon"}
     / TYPOGRAPHY
-    %link{:href=>'http://fonts.googleapis.com/css?family=Cabin:bold', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
+    %link{:href=>'http://fonts.googleapis.com/css?family=Cabin:bold', media: "screen", rel: 'stylesheet', type: "text/css"}
     %link{href: 'http://fonts.googleapis.com/css?family=PT+Sans', rel: 'stylesheet', type: 'text/css'}
     / STYLES
-    %link{:href=> u('stylesheets/bootstrap.css'), :media => "screen", :rel => 'stylesheet', :type => "text/css"}
-    %link{:href=> u('stylesheets/ombushop.css'), :media => "screen", :rel => 'stylesheet', :type => "text/css"}    
-    %link{:rel=> "stylesheet", :type => "text/css", :media => "screen", 
-            :href => u("stylesheets/bootstrap-wysihtml5.css")}
+    %link{:href=> u('stylesheets/bootstrap.css'), media: "screen", rel: 'stylesheet', type: "text/css"}
+    %link{:href=> u('stylesheets/ombushop.css'), media: "screen", rel: 'stylesheet', type: "text/css"}    
+    %link{:rel=> "stylesheet", type: "text/css", media: "screen", 
+            href: u("stylesheets/bootstrap-wysihtml5.css")}
     / SCRIPTS
-    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.8.2.min.js"}
-    %script{:type => "text/javascript", :src => u("javascripts/lib/modernizr-1.6.min.js")}
-    %script{:type => "text/javascript", :src => u("javascripts/application.js")}
-    %script{:type => "text/javascript", :src => u("javascripts/wysihtml5-0.3.0.min.js")}
-    %script{:type => "text/javascript", :src => u("javascripts/bootstrap-wysihtml5.js")}
-    %script{:async => "", :src => "http://www.google-analytics.com/ga.js", :type => "text/javascript"}
+    %script{type: "text/javascript", src: "http://code.jquery.com/jquery-1.8.2.min.js"}
+    %script{type: "text/javascript", src: u("javascripts/lib/modernizr-1.6.min.js")}
+    %script{type: "text/javascript", src: u("javascripts/application.js")}
+    %script{type: "text/javascript", src: u("javascripts/wysihtml5-0.3.0.min.js")}
+    %script{type: "text/javascript", src: u("javascripts/bootstrap-wysihtml5.js")}
+    %script{async: "", src: "http://www.google-analytics.com/ga.js", type: "text/javascript"}
 
   %body
     #outer-container
