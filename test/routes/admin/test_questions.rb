@@ -3,22 +3,19 @@
 require 'test_helper'
 
 class TestQuestions < Test::Unit::TestCase
-  def app
-    Faqtly::App
-  end
 
   def test_create_a_question
     authorize_user!
-    post '/questions', question: { question: "Hello?", answer: 'Hello world!' }
-    assert_equal 302, last_response.status
+    page.driver.submit :post, '/questions', {question: { question: "Hello?", answer: 'Hello world!' }}
+    assert_equal 200, page.status_code
   end
 
   def test_error_messages_on_failed_question_create
     authorize_user!
     old_count = Question.count
     post '/questions', question: { question: "", answer: "" }
-    assert last_response.body.include?("answer is not present")
-    assert last_response.body.include?("question is not present")
+    assert page.has_content?("answer is not present")
+    assert page.has_content?("question is not present")
     assert_equal old_count, Question.count
   end
 
@@ -26,9 +23,9 @@ class TestQuestions < Test::Unit::TestCase
     @question = Question.create( question: 'How much wood would a woodchuck chuck?',
                       answer:   'alot' )
     authorize_user!
-    get "/questions/#{@question.permalink}/edit"
-    assert_equal 200, last_response.status
-    assert last_response.body.include?("value='put'")
+    visit "/questions/#{@question.permalink}/edit"
+    assert_equal 200, page.status_code
+    assert page.has_xpath?("//input[@value='put']")
   end
 
   def test_questions_delete
@@ -37,15 +34,15 @@ class TestQuestions < Test::Unit::TestCase
     old_count = Question.count
     authorize_user!
 
-    delete "/questions/#{@question.permalink}"
-    assert_equal 302, last_response.status
+    page.driver.submit :delete, "/questions/#{@question.permalink}", {}
+    assert_equal 200, page.status_code
     assert_equal Question.count, old_count - 1
   end
 
   def test_questions_new_for_authorized_user
     authorize_user!
-    get '/questions/new'
-    assert last_response.body.include?("id='new-questions-form'")
+    visit '/questions/new'
+    assert page.has_css?("#new-questions-form")
   end  
 
   def test_questions_update
