@@ -33,10 +33,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'pg', "~> 0.13.2"
 
   s.files         = `git ls-files`.split("\n")
-  # s.test_files = [
-  #   "test/helper.rb",
-  #    "test/test_dinero_mail_ipn.rb"
-  # ]
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
@@ -46,7 +42,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'pry-nav'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'heroku'
-  s.add_development_dependency 'factory_girl'
-  s.add_development_dependency 'autotest'
   s.add_development_dependency 'rack-test'
 end
