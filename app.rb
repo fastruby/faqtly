@@ -20,10 +20,9 @@ module Faqtly
     # I18n
     register Sinatra::I18nSupport
 
-
-    # We're going to load the paths to locale files,
-    I18n.load_path += Dir[File.join(File.dirname(Sinatra::Application.root), 'config', 'locales', '*.yml').to_s]
-    load_locales Dir[File.join(File.dirname(Sinatra::Application.root), 'config', 'locales', '*.yml').to_s]
+    # We're going to load the paths to locale files
+    I18n.load_path += Dir[File.join(Sinatra::Application.root, 'config', 'locales', '*.yml').to_s]
+    load_locales Dir[File.join(Sinatra::Application.root, 'config', 'locales', '*.yml').to_s]
     # default_places { File.join(Sinatra::Application.root, 'locales') }
     
     set :default_locale, 'es'
@@ -36,20 +35,15 @@ module Faqtly
     helpers TagsHelper
     helpers QuestionsHelper
 
-    configure :production, :development do
+    configure :production, :development, :test do
       enable :logging
       set :app_file, __FILE__
-      set :root, File.join(Sinatra::Application.root, '..')
-      set :views, File.join(Sinatra::Application.root, '..', 'views')
-      set :public_folder, File.join(Sinatra::Application.root, '..', 'public')
+      set :root, File.join(Sinatra::Application.root)
+      set :views, File.join(Sinatra::Application.root, 'views')
+      set :public_folder, File.join(Sinatra::Application.root, 'public')
       set :haml, { format: :html5 } # default Haml format is :xhtml
-      Compass.add_project_configuration(File.join(Sinatra::Application.root, 'compass.rb'))  
+      Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.rb'))  
       enable :clean_trace
-    end
-
-    configure :test do
-      set :root, File.dirname(__FILE__)
-      set :views, "#{File.dirname(__FILE__)}/views"
     end
 
   end
