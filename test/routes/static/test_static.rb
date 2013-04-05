@@ -8,6 +8,7 @@ class TestMain < Test::Unit::TestCase
   def test_root
     get '/'
     assert_equal 200, last_response.status
+
   end
 
   def test_about_page
@@ -22,7 +23,7 @@ class TestMain < Test::Unit::TestCase
 
   def test_questions_search
     @question = Question.create( question: 'Y candela? Y la moto?',
-                      answer:   'alot' )
+                      answer: 'alot' )
 
     get "/preguntas/search?q=candela"
     assert_equal 200, last_response.status
