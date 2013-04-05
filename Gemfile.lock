@@ -24,6 +24,15 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.3.2)
+    capybara (2.0.3)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      selenium-webdriver (~> 2.0)
+      xpath (~> 1.0.0)
+    childprocess (0.3.9)
+      ffi (~> 1.0, >= 1.0.11)
     chronic (0.8.0)
     chunky_png (1.2.6)
     coderay (1.0.8)
@@ -42,6 +51,7 @@ GEM
     debugger-ruby_core_source (1.1.3)
     eventmachine (1.0.0)
     excon (0.16.4)
+    ffi (1.6.0)
     fssm (0.2.9)
     grid-coordinates (1.1.9)
       compass (>= 0.11.5)
@@ -84,6 +94,11 @@ GEM
       mime-types (>= 1.16)
     rubyzip (0.9.9)
     sass (3.1.21)
+    selenium-webdriver (2.31.0)
+      childprocess (>= 0.2.5)
+      multi_json (~> 1.0)
+      rubyzip
+      websocket (~> 1.0.4)
     sequel (3.41.0)
     sequel_pg (1.6.2)
       pg (>= 0.8.0)
@@ -102,11 +117,15 @@ GEM
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     tilt (1.3.3)
+    websocket (1.0.7)
+    xpath (1.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  capybara
   debugger
   faqtly!
   heroku
