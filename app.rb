@@ -32,6 +32,7 @@ module Faqtly
     helpers Rack::Utils
     helpers Faqtly::Authentication
     helpers Faqtly::RenderPartial
+    helpers Faqtly::SEO
     helpers TagsHelper
     helpers QuestionsHelper
 
