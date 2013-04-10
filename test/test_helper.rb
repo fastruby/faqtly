@@ -36,6 +36,7 @@ class Test::Unit::TestCase
     def assert_seo
       within('head') do
         assert meta_tag('description')[:content], "No description meta tag for #{page.current_path}"
+        assert meta_tag('keywords')[:content], "No keywords meta tag for #{page.current_path}"
       end
     end
 
