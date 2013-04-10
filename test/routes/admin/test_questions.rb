@@ -6,7 +6,7 @@ class TestQuestions < Test::Unit::TestCase
 
   def test_create_a_question
     authorize_user!
-    page.driver.submit :post, '/questions', {question: { question: "Hello?", answer: 'Hello world!' }}
+    post '/questions', {question: { question: "Hello?", answer: 'Hello world!' }}
     assert_equal 200, page.status_code
   end
 
@@ -34,7 +34,7 @@ class TestQuestions < Test::Unit::TestCase
     old_count = Question.count
     authorize_user!
 
-    page.driver.submit :delete, "/questions/#{@question.permalink}", {}
+    delete "/questions/#{@question.permalink}", {}
     assert_equal 200, page.status_code
     assert_equal Question.count, old_count - 1
   end

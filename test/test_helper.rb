@@ -10,7 +10,12 @@ require 'sequel_test_case'
 
 require_relative '../app'
 
+# Set test environment
 ENV['RACK_ENV'] = 'test'
+Sinatra::Base.set :environment, :test
+Sinatra::Base.set :run, false
+Sinatra::Base.set :raise_errors, true
+Sinatra::Base.set :logging, false
 
 # Making Capybara::DSL available to all test cases
 class Test::Unit::TestCase
@@ -24,38 +29,52 @@ class Test::Unit::TestCase
     Capybara.reset_sessions!
     Capybara.use_default_driver
   end
-end
 
-# set test environment
-Sinatra::Base.set :environment, :test
-Sinatra::Base.set :run, false
-Sinatra::Base.set :raise_errors, true
-Sinatra::Base.set :logging, false
+  protected
+
+    # Asserts that the SEO for the page is proper
+    def assert_seo
+      within('head') do
+        assert meta_tag('description')[:content], "No description meta tag for #{page.current_path}"
+      end
+    end
+
+    # Returns the meta with the name parameter
+    #
+    # @param [String] eg. 'description'
+    def meta_tag(name)
+      page.first(:xpath, "//meta[@name=\"#{name}\"]")
+    end
+
+    # AKA assert_false
+    def deny(test, msg=nil)
+      if msg then
+        assert !test, msg
+      else
+        assert !test
+      end
+    end
+
+    # HTTP Authentication
+    def authorize_user!
+      page.driver.browser.authorize('admin', 'ch0p')
+    end
+
+    # Submit POST request
+    def post(path, data = {})
+      page.driver.submit :post, path, data
+    end
+
+    # Submit PUT request
+    def put(path, data = {})
+      page.driver.submit :put, path, data
+    end
+
+    # Submit DELETE request
+    def delete(path, data = {})
+      page.driver.submit :delete, path, data
+    end
+
+end
 
 puts "Testing #{Sinatra::Base.environment} environment"
-
-require File.join(File.dirname(__FILE__), '../app')
-
-def deny(test, msg=nil)
-  if msg then
-    assert !test, msg
-  else
-    assert !test
-  end
-end
-
-def assert_seo
-  page
-end
-
-def authorize_user!
-  page.driver.browser.authorize('admin', 'ch0p')
-end
-
-def post(path, data = {})
-  page.driver.submit :post, path, data
-end
-
-def put(path, data = {})
-  page.driver.submit :put, path, data
-end

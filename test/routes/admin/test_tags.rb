@@ -33,7 +33,7 @@ class TestTags < Test::Unit::TestCase
     @tag = Tag.create( name: 'Hosting' )
 
     authorize_user!
-    page.driver.submit :put, "/tags/#{@tag.permalink}", {tag: { name: "Servers" }}
+    put "/tags/#{@tag.permalink}", {tag: { name: "Servers" }}
     assert_equal "Servers", Tag[@tag.id].name
   end
 end
