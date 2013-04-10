@@ -18,7 +18,30 @@ module Faqtly
       title
     end
 
-    # Calculates the page meta tags for SEO.
+    # Calculates the page meta keywords tag for SEO.
+    #
+    # @return [String] CSV string
+    def keywords
+      result = ''
+      base_keywords = "tienda online,tienda facebook,e-commerce"
+      if @question
+        result = "#{base_keywords},#{@question.keywords}"
+      elsif @tag
+        questions = @tag.questions
+        keywords = questions.map(&:keywords).join(',')
+        result = "#{base_keywords},#{keywords}"
+      elsif @tags
+        keywords = @tags.map{|x| "categoría #{x.name}"}.join(',')
+        result = "#{base_keywords},#{keywords}"
+      elsif @questions
+        keywords = @questions.map(&:keywords).join(',')
+        result = "#{base_keywords},#{keywords}"
+      end
+        
+      result
+    end
+
+    # Calculates the page meta description tag for SEO.
     #
     # @return [String] Description value
     def meta_description
