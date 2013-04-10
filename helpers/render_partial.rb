@@ -1,6 +1,4 @@
-# Borrowed from Tanner Burson: http://github.com/tannerburson
-# http://github.com/adamstac/sinatra-plugins/blob/master/render_partial.rb
-
+# encoding: utf-8
 module Faqtly
   module RenderPartial
     def url_path(*path_parts)
@@ -15,22 +13,6 @@ module Faqtly
 
     def partial(page, options={})
       haml page, options.merge!(layout: false), options[:locals]
-    end
-
-    # Calculates the page title using a question. 
-    # 
-    # @param [Question,nil] 
-    # @return [String] Page title
-    def page_title(question = nil, tag = nil)
-      if question
-        title = question.question.to_s
-      elsif tag
-        title = "Preguntas Frecuentes: #{tag.name.to_s}."
-      else
-        title = "OmbuShop, Tu Tienda Online. Preguntas Frecuentes."
-      end
-
-      title
     end
 
     # Returns the previous and next links if necessary. 
