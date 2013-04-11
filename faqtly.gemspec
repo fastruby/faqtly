@@ -37,9 +37,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency 'sqlite3'
-  s.add_development_dependency 'debugger'
-  s.add_development_dependency 'pry'
-  s.add_development_dependency 'pry-nav'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'heroku'
   s.add_development_dependency 'rack-test'
