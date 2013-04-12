@@ -40,4 +40,6 @@ module Faqtly
   end 
 end 
 
+DB = Faqtly::App.connect unless Object.const_defined?('DB') 
+
 require_relative "environments/#{ENV['RAILS_ENV'] || Sinatra::Base.environment}"
