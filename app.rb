@@ -49,3 +49,5 @@ module Faqtly
 
   end
 end
+
+DB = Faqtly::App.connect unless Object.const_defined?('DB') 
