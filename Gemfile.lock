@@ -94,7 +94,6 @@ GEM
       tilt (>= 1.2.2, < 2.0)
     sinatra-support (1.2.2)
       sinatra (>= 1.0)
-    sqlite3 (1.3.6)
     thin (1.5.0)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -113,4 +112,3 @@ DEPENDENCIES
   heroku
   rack-test
   rake
-  sqlite3
