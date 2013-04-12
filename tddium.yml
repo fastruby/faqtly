@@ -2,7 +2,7 @@
   :tests:
     - bundle exec rake test
 
-  :postgres: 
+  :postgresql: 
     :adapter: 'postgres'
     :database: <%= ENV['TDDIUM_DB_NAME'] %>
     :username: <%= ENV['TDDIUM_DB_USER'] %>
