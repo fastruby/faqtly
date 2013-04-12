@@ -1,3 +1,9 @@
 :tddium:
   :tests:
     - bundle exec rake test
+
+  :postgres: 
+    :adapter: 'postgres'
+    :database: <%= ENV['TDDIUM_DB_NAME'] %>
+    :username: <%= ENV['TDDIUM_DB_USER'] %>
+    :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
