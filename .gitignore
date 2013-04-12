@@ -6,3 +6,4 @@ faqtly_test.db
 .DS_Store
 tmp/**/*
 faqtly_development.db
+config/database.yml
