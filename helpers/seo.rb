@@ -4,18 +4,29 @@ module Faqtly
 
     # Calculates the page title using a question. 
     # 
-    # @param [Question,nil] 
     # @return [String] Page title
-    def page_title(question = nil, tag = nil)
-      if question
-        title = question.question.to_s
-      elsif tag
-        title = "Preguntas Frecuentes: #{tag.name.to_s}."
+    def page_title
+      result = ''
+
+      if @page_title
+        result = @page_title
+      elsif @question
+        result = "#{@question.question.to_s} OmbuShop" 
+      elsif @tag
+        result = "Preguntas Frecuentes: #{@tag.name.to_s}. "
+      elsif @tags
+        result = "OmbuShop: Categorías de Preguntas. "
       else
-        title = "OmbuShop, Tu Tienda Online. Preguntas Frecuentes."
+        result = "OmbuShop: Preguntas Frecuentes. "
       end
 
-      title
+      result = result[0..70]
+
+      if params[:page]
+        result += "| Página #{params[:page]}"
+      end
+
+      result
     end
 
     # Calculates the page meta keywords tag for SEO.

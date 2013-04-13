@@ -1,5 +1,8 @@
 "es":
   about: 
-    title: "Ayuda"
-    content: "Aquí podrás encontrar preguntas y respuestas sobre tu tienda virtual. Si tienes alguna pregunta, no dudes en contactarnos."
+    title: "Ayuda con OmbuShop"
+    content: |
+      <p>Aquí podrás encontrar preguntas y respuestas sobre <a target='_blank' title="Tienda Online" href='http://www.ombushop.com/'>tu tienda online</a>. Crear una tienda sobre OmbuShop es fácil, pero si necesitas ayuda, puedes buscar aquí.</p>
+      <p>Si tienes alguna pregunta, no dudes en contactarnos.</p>
+
   
