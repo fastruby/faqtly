@@ -1,9 +1,14 @@
 :tddium:
+  :hooks:
+    :pre: cp config/database.yml.tmpl config/database.yml
   :tests:
     - bundle exec rake test
 
   :postgresql: 
-    :adapter: 'postgres'
-    :database: <%= ENV['TDDIUM_DB_NAME'] %>
-    :username: <%= ENV['TDDIUM_DB_USER'] %>
-    :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
+    :version: '9.2'
+    :adapter: postresql
+    :config:
+      :adapter: <%= ENV['TDDIUM_DB_ADAPTER'] %>
+      :database: <%= ENV['TDDIUM_DB_NAME'] %>
+      :username: <%= ENV['TDDIUM_DB_USER'] %>
+      :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
