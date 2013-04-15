@@ -23,11 +23,13 @@ module Faqtly
     end 
 
     def self.root 
-      File.expand_path(File.join(File.dirname(__FILE__),'..')) 
+      File.join(File.dirname(__FILE__),'..')
     end
 
-    def self.config 
-      config = YAML.load_file(File.join(root,'config','database.yml'))[env] 
+    def self.config
+      template = ERB.new(File.read(File.join(root,'config','database.yml'))).result
+      database_config = YAML.load(template) 
+      config = database_config[env] 
       # I like to use logger to track queries 
       # config['logger'] = Logger.new(File.join(root,'log',"sequel_# 
 # {env}.log")) 
