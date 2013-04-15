@@ -1,6 +1,6 @@
 :tddium:
   :tests:
-    - bundle exec rake test
+    - bundle exec rake test --trace
 
   :postgresql: 
     :version: '9.2'
