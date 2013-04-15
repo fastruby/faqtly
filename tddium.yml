@@ -4,9 +4,9 @@
 
   :postgresql: 
     :version: '9.2'
-    :adapter: postresql
+    :adapter: postgresql
     :config:
-      :adapter: <%= ENV['TDDIUM_DB_ADAPTER'] %>
+      :adapter: postgres
       :database: <%= ENV['TDDIUM_DB_NAME'] %>
       :username: <%= ENV['TDDIUM_DB_USER'] %>
       :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
