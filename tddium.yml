@@ -1,6 +1,4 @@
 :tddium:
-  :hooks:
-    :pre: cp config/database.yml.tmpl config/database.yml
   :tests:
     - bundle exec rake test
 
