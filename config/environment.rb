@@ -29,11 +29,7 @@ module Faqtly
     def self.config
       template = ERB.new(File.read(File.join(root,'config','database.yml'))).result
       database_config = YAML.load(template) 
-      config = database_config[env] 
-      # I like to use logger to track queries 
-      # config['logger'] = Logger.new(File.join(root,'log',"sequel_# 
-# {env}.log")) 
-      config 
+      database_config[env]
     end
 
     def self.connect 
