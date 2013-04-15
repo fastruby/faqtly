@@ -1,6 +1,6 @@
 namespace :tddium do
   desc "load database extensions"
-  task :db_hook do
+  task db_hook: :environment do
 
     Rake::Task["sq:reset"].invoke
     
