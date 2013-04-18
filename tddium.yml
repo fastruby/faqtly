@@ -10,3 +10,4 @@
       :database: <%= ENV['TDDIUM_DB_NAME'] %>
       :username: <%= ENV['TDDIUM_DB_USER'] %>
       :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
+      :database: <%= ENV['TDDIUM_DB_NAME'] %>
