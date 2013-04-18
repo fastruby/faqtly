@@ -1,4 +1,5 @@
 require 'sequel'
+require_relative '../app'
 
 namespace :sq do
 
@@ -23,6 +24,7 @@ namespace :sq do
 
     desc "Perform migration up to latest migration available"
     task up: :environment do
+
       ::Sequel.extension :migration
       ::Sequel::Migrator.run Sequel::Model.db, "db/migrate"
       puts "<= sq:migrate:up executed"
