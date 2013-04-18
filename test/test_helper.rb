@@ -5,9 +5,6 @@ require 'sinatra'
 require 'capybara'
 require 'capybara/dsl'
 require 'test/unit'
-require 'sequel_test_case'
-
-require_relative '../app'
 
 # Set test environment
 ENV['RACK_ENV'] = 'test'
@@ -15,6 +12,8 @@ Sinatra::Base.set :environment, :test
 Sinatra::Base.set :run, false
 Sinatra::Base.set :raise_errors, true
 Sinatra::Base.set :logging, false
+
+require_relative '../app'
 
 # Making Capybara::DSL available to all test cases
 class Test::Unit::TestCase
