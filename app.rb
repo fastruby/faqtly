@@ -9,7 +9,6 @@ require_relative 'routes/main'
 
 module Faqtly
   class App < Sinatra::Application
-
     # HTTP Authentication
     set sessions: true
 
