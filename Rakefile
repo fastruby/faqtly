@@ -22,5 +22,6 @@ task test: :pre_test
 
 task :pre_test do 
   ENV["RACK_ENV"] = 'test'
-  Rake::Task["sq:reset"].invoke
+  Rake::Task["sq:migrate:down"].invoke
+  Rake::Task["sq:migrate:up"].invoke
 end 
