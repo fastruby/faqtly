@@ -5,6 +5,7 @@ require 'sinatra'
 require 'capybara'
 require 'capybara/dsl'
 require 'test/unit'
+require 'database_cleaner'
 
 # Set test environment
 ENV['RACK_ENV'] = 'test'
@@ -21,11 +22,13 @@ class Test::Unit::TestCase
 
   def setup
     Capybara.app = Faqtly::App.new
+    DatabaseCleaner.strategy = :truncation
   end
 
   def teardown
     Capybara.reset_sessions!
     Capybara.use_default_driver
+    DatabaseCleaner.clean
   end
 
   protected
