@@ -37,6 +37,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency 'rake'
+  s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'heroku'
   s.add_development_dependency 'rack-test'
   s.add_development_dependency 'capybara'
