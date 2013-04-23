@@ -8,3 +8,4 @@ tmp/**/*
 faqtly_development.db
 config/database.yml
 .tddium*
+faqtly_development
