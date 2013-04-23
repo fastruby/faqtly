@@ -1,0 +1,13 @@
+:tddium:
+  :tests:
+    - bundle exec rake test --trace
+
+  :postgresql: 
+    :version: '9.2'
+    :adapter: postgresql
+    :config:
+      :adapter: postgres
+      :database: <%= ENV['TDDIUM_DB_NAME'] %>
+      :username: <%= ENV['TDDIUM_DB_USER'] %>
+      :password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
+      :database: <%= ENV['TDDIUM_DB_NAME'] %>

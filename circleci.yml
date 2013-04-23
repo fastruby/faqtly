@@ -1,0 +1,6 @@
+dependencies:
+  pre:
+    - mv config/database.yml.tmpl config/database.yml
+test:
+  override:
+    - bundle exec rake test --trace

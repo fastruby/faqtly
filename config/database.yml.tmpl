@@ -1,0 +1,22 @@
+development:
+  host: 127.0.0.1
+  adapter: postgres
+  database: faqtly_development
+  username: postgres
+  password: postgres
+
+test: &test
+  adapter: postgres
+  encoding: utf8
+  reconnect: false
+  database: faqtly_test
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgres
+  encoding: utf8
+  reconnect: false
+  database: faqtly_production
+  pool: 5

@@ -8,11 +8,11 @@ task :environment do
   require './app'
 end
 
-task :seed => :environment do
+task seed: :environment do
   require 'csv'    
 
   csv_text = File.read('db/seed/initial-faq-sheet.csv')
-  csv = CSV.parse(csv_text, :headers => true)
+  csv = CSV.parse(csv_text, headers: true)
   csv.each do |row|
     tag_name = row[0]
     question = row[1]

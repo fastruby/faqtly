@@ -13,6 +13,7 @@ module Routes
     end
 
     get '/about' do
+      @page_title = 'Ayuda con OmbuShop'
       haml :about, layout: :'layouts/application'
     end
 
