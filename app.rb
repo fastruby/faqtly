@@ -38,11 +38,11 @@ module Faqtly
     configure :production, :development, :test do
       enable :logging
       set :app_file, __FILE__
-      set :root, File.join(Sinatra::Application.root)
-      set :views, File.join(Sinatra::Application.root, 'views')
-      set :public_folder, File.join(Sinatra::Application.root, 'public')
+      set :root, File.join(App.root)
+      set :views, File.join(App.root, 'views')
+      set :public_folder, File.join(App.root, 'public')
       set :haml, { format: :html5 } # default Haml format is :xhtml
-      Compass.add_project_configuration(File.join(Sinatra::Application.root, 'config', 'compass.rb'))  
+      Compass.add_project_configuration(File.join(App.root, 'config', 'compass.rb'))  
       enable :clean_trace
     end
 

@@ -17,7 +17,8 @@ module Faqtly
     end 
 
     def self.root 
-      File.join(File.dirname(__FILE__),'..')
+      @app_root ||= File.join(File.dirname(__FILE__), '..')
+      @app_root
     end
 
     def self.config
