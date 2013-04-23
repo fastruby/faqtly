@@ -7,6 +7,8 @@ require_relative 'helpers/init'
 require_relative 'models/init'
 require_relative 'routes/main'
 
+puts "Path to Compass: #{File.join(Faqtly::App.root, 'config', 'compass.rb').to_s}" 
+
 module Faqtly
   class App < Sinatra::Application
     # HTTP Authentication
