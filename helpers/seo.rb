@@ -11,7 +11,17 @@ module Faqtly
       if @page_title
         result = @page_title
       elsif @question
-        result = "#{@question.question.to_s} OmbuShop" 
+        if @question.question.to_s.length < 50
+          if t1 = @question.tags.first
+            result = "#{t1.name.to_s} #{@question.question.to_s}" 
+          else
+            result = "OmbuShop: #{@question.question.to_s}" 
+          end
+          
+        else
+          result = "OmbuShop: #{@question.question.to_s}" 
+        end
+        
       elsif @tag
         result = "Preguntas Frecuentes: #{@tag.name.to_s}. "
       elsif @tags
