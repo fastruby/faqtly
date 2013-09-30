@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
 
   # Sass & Compass
   s.add_dependency 'sass', '~> 3.1.12'
-  s.add_dependency 'compass', '~> 0.11.6'
+  s.add_dependency 'compass', '~> 0.12.0'
   s.add_dependency 'grid-coordinates', '~> 1.1.4'
   s.add_dependency 'rack-flash3'
   s.add_dependency 'sequel_pg'
