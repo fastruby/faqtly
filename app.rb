@@ -48,5 +48,9 @@ module Faqtly
       enable :clean_trace
     end
 
+    configure :production do
+      set :show_exceptions, false
+    end
+
   end
 end
