@@ -1,6 +1,7 @@
 # encoding: utf-8
 class Question < Sequel::Model
   include Permalinker
+  dataset.extension(:pagination)
 
   self.raise_on_save_failure = false
 
@@ -36,7 +37,7 @@ class Question < Sequel::Model
     scope = params[:scope] || Question
     page = params[:page] || 1
     per_page = params[:per_page] || 10
-    scope.paginate(page.to_i, per_page.to_i)
+    scope.dataset.paginate(page.to_i, per_page.to_i)
   end
 
   private
