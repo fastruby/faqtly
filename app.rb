@@ -1,5 +1,8 @@
 require 'rack-flash'
 require 'i18n'
+require 'sequel'
+require 'will_paginate'
+require 'will_paginate/sequel'
 
 require_relative 'lib/permalinker'
 require_relative 'config/environment'
