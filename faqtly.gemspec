@@ -18,12 +18,10 @@ Gem::Specification.new do |s|
   s.add_dependency 'chronic'
   s.add_dependency 'sinatra', '~> 1.2.3'
   s.add_dependency 'sinatra-support'
-  s.add_dependency 'shotgun', '~> 0.9'
   s.add_dependency 'haml', '~> 3.1.4'
-  s.add_dependency 'sequel'
-
-  s.add_dependency 'thin'
+  s.add_dependency 'sequel', '~> 3.48.0'
   s.add_dependency 'i18n'
+  s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
   s.add_dependency 'sass', '~> 3.1.12'
@@ -43,4 +41,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rack-test'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pry'
+  s.add_development_dependency 'thin'
+  s.add_development_dependency 'shotgun', '~> 0.9'
 end
