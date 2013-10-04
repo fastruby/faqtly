@@ -37,6 +37,9 @@ class Question < Sequel::Model
     scope = params[:scope] || Question
     page = params[:page] || 1
     per_page = params[:per_page] || 10
+    dataset = params[:dataset]
+    
+    dataset = scope ? scope.dataset : dataset
     scope.dataset.paginate(page.to_i, per_page.to_i)
   end
 
