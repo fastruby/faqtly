@@ -19,10 +19,10 @@ class Question < Sequel::Model
   # 
   # @return [Array]
   def self.full_text_search(query, params = {})
-    scope = Question.where(Sequel.like(:answer, "%#{query}%")).
+    dataset = Question.where(Sequel.like(:answer, "%#{query}%")).
                   or(Sequel.like(:question, "%#{query}%"))
 
-    self.paginated(params.merge(scope: scope))
+    self.paginated(params.merge(dataset: dataset))
     # TODO full_text_search('answer', query)
   end
 
