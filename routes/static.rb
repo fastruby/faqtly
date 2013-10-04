@@ -50,8 +50,6 @@ module Routes
 
     get '/tags/:permalink' do |permalink|
       @tag = find_tag(permalink)
-      require 'pry'
-      binding.pry
       @questions = Question.paginated(dataset: @tag.questions_dataset)
 
       haml :'tags/show', layout: :'layouts/application'
