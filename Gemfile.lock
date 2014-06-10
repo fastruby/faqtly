@@ -5,7 +5,7 @@ PATH
       chronic
       compass (~> 0.12.0)
       grid-coordinates (~> 1.1.4)
-      haml (~> 3.1.4)
+      haml (~> 4.0.5)
       httparty (~> 0.8.1)
       i18n
       i18n
@@ -48,7 +48,8 @@ GEM
     fssm (0.2.10)
     grid-coordinates (1.1.9)
       compass (>= 0.11.5)
-    haml (3.1.8)
+    haml (4.0.5)
+      tilt
     heroku (2.32.4)
       heroku-api (~> 0.3.5)
       launchy (>= 0.3.2)
