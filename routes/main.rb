@@ -1,3 +1,4 @@
+require 'base'
 require 'static'
 require 'admin'
 
@@ -5,5 +6,8 @@ require 'admin'
 module Faqtly
   class App < Sinatra::Application
     include Permalinker
+
+    use Admin
+    use Static
   end
 end
