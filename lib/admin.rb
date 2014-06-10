@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class Admin < Sinatra::Base
+class Admin < Faqtly::Base
 
   #
   # Admin paths

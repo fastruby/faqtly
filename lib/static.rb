@@ -1,6 +1,7 @@
 require 'sinatra/base'
 
-class Static < Sinatra::Base
+class Static < Faqtly::Base
+
   #
   # General paths
   #
