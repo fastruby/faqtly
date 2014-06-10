@@ -9,7 +9,7 @@
     .contenido
       %h2
         %a{ href: u("preguntas/#{q.permalink}")}= q.question
-      %p= q.answer
+      %p!= q.answer
     -if can?
       .span1.small.actions
         %a{ href: u("questions/#{q.permalink}/edit"), class: "btn"}= t(:edit)
@@ -17,4 +17,4 @@
           %input{ type: 'hidden', name: '_method', value: 'delete'}
           %input{ type: 'submit', value: t(:delete), class: "btn btn-danger"}
 
-=pagination(scope: @questions)
+!=pagination(scope: @questions)
