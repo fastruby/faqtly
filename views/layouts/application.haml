@@ -29,13 +29,13 @@
 
   %body
     #outer-container
-      = partial :_nav_main
+      != partial :_nav_main
 
       .container
-        = partial :_notices
-        = yield
+        != partial :_notices
+        != yield
 
-      = partial :_analytics
+      != partial :_analytics
 
       %footer.footer
         / .navbar.navbar-fixed-bottom
