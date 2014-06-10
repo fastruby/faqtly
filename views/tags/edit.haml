@@ -1,6 +1,6 @@
 %form{ action: "/tags/#{@tag.permalink}", method: 'post', class: 'form-horizontal',  id: 'new-tags-form' }
   %input{ type: 'hidden', name: '_method', value: 'put'}
-  = partial :'tags/_form'
+  != partial :'tags/_form'
   .control-group.span9
     .controls.pull-right
       %button{ type: 'submit', class: 'btn btn-primary' }= t(:update)
