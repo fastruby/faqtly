@@ -1,6 +1,6 @@
 %form{ action: '/questions', method: 'post', class: 'form-horizontal',  id: 'new-questions-form' }
   %legend= t(:'questions.asking')
-  = partial :'questions/_form'
+  != partial :'questions/_form'
   .control-group.span9
     .controls.pull-right
       %button{ type: 'submit', class: 'btn btn-primary' }= t(:create)
