@@ -12,11 +12,11 @@ module Faqtly
     end
 
     def partial(page, options={})
-      haml page, options.merge!(layout: false), options[:locals]
+      haml(page, options.merge!(layout: false), options[:locals])
     end
 
-    # Returns the previous and next links if necessary. 
-    # 
+    # Returns the previous and next links if necessary.
+    #
     # It uses `request.path`; params[:page] and opts[:scope]
     # to determine the result.
     #
