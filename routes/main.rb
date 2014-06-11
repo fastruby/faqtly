@@ -7,7 +7,7 @@ module Faqtly
   class App < Sinatra::Application
     include Permalinker
 
-    use Admin
-    use Static
+    use Faqtly::Admin
+    use Faqtly::Static
   end
 end
