@@ -14,7 +14,7 @@ PATH
       rack-flash3
       rake
       sass (~> 3.1.12)
-      sequel (~> 3.48.0)
+      sequel (~> 4.11.0)
       sequel_pg
       sinatra (~> 1.4.5)
       sinatra-support
@@ -92,7 +92,7 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
-    sequel (3.48.0)
+    sequel (4.11.0)
     sequel_pg (1.6.9)
       pg (>= 0.8.0)
       sequel (>= 3.39.0)
