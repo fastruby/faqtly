@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "faqtly"
 
-  s.add_dependency 'rake'
+  s.add_dependency 'rake', '~> 0.9.2.2'
   s.add_dependency 'i18n'
   s.add_dependency 'httparty', '~> 0.8.1'
   s.add_dependency 'nokogiri', '~> 1.5.0'
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra', '~> 1.4.5'
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
-  s.add_dependency 'sequel', '~> 3.48.0' # ~> 4.11.0
+  s.add_dependency 'sequel', '~> 4.11.0'
   s.add_dependency 'i18n'
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
@@ -35,7 +35,7 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '~> 0.9.2.2'
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'heroku'
   s.add_development_dependency 'rack-test'
