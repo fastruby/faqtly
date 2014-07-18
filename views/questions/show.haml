@@ -1,6 +1,6 @@
 .row.show
-  %h2= @question.question
+  %h2!= @question.question
   .contenido
-    %p= @question.answer
+    %p!= @question.answer
   .back-container
-    %a{ href: u('preguntas')}= t(:back) 
+    %a{ href: u('preguntas')}= t(:back)
