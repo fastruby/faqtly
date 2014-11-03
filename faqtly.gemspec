@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
   s.add_dependency 'sequel', '~> 4.11.0'
-  s.add_dependency 'i18n'
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
