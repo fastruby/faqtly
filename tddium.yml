@@ -2,9 +2,9 @@
   :tests:
     - bundle exec rake test --trace
 
-  :postgresql: 
+  :postgresql:
     :version: '9.2'
-    :adapter: postgresql
+    :adapter: postgres
     :config:
       :adapter: postgres
       :database: <%= ENV['TDDIUM_DB_NAME'] %>
