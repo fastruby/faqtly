@@ -19,13 +19,16 @@ class TestMain < Test::Unit::TestCase
   end
 
   def test_questions_search
-    @question = Question.create( question: 'Y candela? Y la moto?',
-                      answer: 'alot' )
+    Question.create(question: 'Que es OmbuShop?',
+                    answer: 'Es tu tienda online' )
+    @question = Question.create(question: 'Y candela? Y la moto?',
+                                answer: 'esta todo bien' )
 
     visit "/preguntas/search?q=candela"
     assert_equal 200, page.status_code
-    assert page.has_content?("la moto")
-  end  
+    assert page.has_content?("esta todo bien")
+    assert !page.has_content?("tu tienda online")
+  end
 
   def test_question_show
     @question = Question.create( question: 'What would Steve Jobs do?',
