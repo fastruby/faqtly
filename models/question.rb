@@ -7,7 +7,7 @@ class Question < Sequel::Model
 
   plugin :validation_helpers
   many_to_many :tags
-  
+
   def validate
     super
     validates_presence [:question, :answer]
@@ -16,13 +16,13 @@ class Question < Sequel::Model
 
   # Finds a set of [Question] instances with the query.
   # It searches through question and answer content.
-  # 
+  #
   # @return [Array]
   def self.full_text_search(query, params = {})
     dataset = Question.where(Sequel.like(:answer, "%#{query}%")).
                   or(Sequel.like(:question, "%#{query}%"))
 
-    self.paginated(params.merge(dataset: dataset))
+    paginated(params.merge(dataset: dataset))
     # TODO full_text_search('answer', query)
   end
 
@@ -34,13 +34,15 @@ class Question < Sequel::Model
   end
 
   def self.paginated(params = {})
-    scope = params[:scope] || Question
     page = params[:page] || 1
     per_page = params[:per_page] || 10
-    dataset = params[:dataset]
-    
-    dataset = scope ? scope.dataset : dataset
-    scope.dataset.paginate(page.to_i, per_page.to_i)
+
+    unless dataset = params[:dataset]
+      scope = params[:scope] || Question
+      dataset = scope.dataset
+    end
+
+    dataset.paginate(page.to_i, per_page.to_i)
   end
 
   private
