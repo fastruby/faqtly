@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra', '~> 1.4.5'
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
-  s.add_dependency 'sequel', '~> 4.11.0'
+  s.add_dependency 'sequel', '~> 4.24.0'
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
@@ -27,12 +27,12 @@ Gem::Specification.new do |s|
   s.add_dependency 'compass', '~> 0.12.0'
   s.add_dependency 'grid-coordinates', '~> 1.1.4'
   s.add_dependency 'rack-flash3'
-  s.add_dependency 'sequel_pg'
-  s.add_dependency 'pg', "~> 0.13.2"
+  s.add_dependency 'sequel_pg', '~> 1.6.13'
+  s.add_dependency 'pg', '~> 0.18.2'
 
   s.files         = `git ls-files`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+  s.require_paths = ['lib']
 
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'heroku'
