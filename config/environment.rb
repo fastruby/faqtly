@@ -3,7 +3,10 @@ require 'bundler/setup'
 require 'sinatra'
 require 'haml'
 require 'yaml'
+require 'pg'
 require 'sequel'
+require 'sequel/adapters/postgres'
+require 'sequel_pg'
 require 'compass'
 require 'sinatra/support/i18nsupport'
 
@@ -22,20 +25,25 @@ module Faqtly
     end
 
     def self.config
-      template = ERB.new(File.read(File.join(root,'config','database.yml'))).result
+      template = ERB.new(File.read(File.join(root,'config', 'database.yml'))).result
       database_config = YAML.load(template)
       database_config[env]
     end
 
     def self.connect
-      Sequel.connect(config)
+      hash = config
+      require 'byebug'; byebug
+      url = "postgres://#{hash['username']}:"\
+            "#{hash['password']}@#{hash['host']}:#{hash['port']}/"\
+            "#{hash['database']}"
+      Sequel.connect(url)
     end
 
   end
 end
 
 DB = Faqtly::App.connect unless Object.const_defined?('DB')
-
+Sequel::Model.db = DB
 DB.extension :pagination
 
 require_relative "environments/#{ENV['RAILS_ENV'] || Sinatra::Base.environment}"
