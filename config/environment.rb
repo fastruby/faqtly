@@ -32,7 +32,6 @@ module Faqtly
 
     def self.connect
       hash = config
-      require 'byebug'; byebug
       url = "postgres://#{hash['username']}:"\
             "#{hash['password']}@#{hash['host']}:#{hash['port']}/"\
             "#{hash['database']}"
