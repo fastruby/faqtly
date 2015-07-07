@@ -32,7 +32,7 @@ module Faqtly
 
     def self.connect
       hash = config
-      url = "postgres://#{hash['username']}:"\
+      url = "#{hash['adapter']}://#{hash['username']}:"\
             "#{hash['password']}@#{hash['host']}:#{hash['port']}/"\
             "#{hash['database']}"
       Sequel.connect(url)
