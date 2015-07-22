@@ -12,11 +12,15 @@
     cd faqtly
     bundle install
 
+You need to have the PostgreSQL running before setting up the Database
+
 ## Setup Database
 
     bundle exec rake sq:reset
 
 ## Start
+
+Setup database connection: `cp config/database.yml.tmpl config/database.yml`
 
     bundle exec shotgun
 
