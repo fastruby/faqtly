@@ -31,11 +31,7 @@ module Faqtly
     end
 
     def self.connect
-      hash = config
-      url = "#{hash['adapter']}://#{hash['username']}:"\
-            "#{hash['password']}@#{hash['host']}:#{hash['port']}/"\
-            "#{hash['database']}"
-      Sequel.connect(url)
+      Sequel.connect(config)
     end
 
   end
