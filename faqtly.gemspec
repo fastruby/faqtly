@@ -9,9 +9,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{FAQtly}
   s.description = %q{FAQtly: FAQ Open Source}
 
-  s.rubyforge_project = "faqtly"
-
-  s.add_dependency 'rake', '~> 0.9.2.2'
+  s.add_dependency 'rake'
   s.add_dependency 'i18n'
   s.add_dependency 'httparty', '~> 0.8.1'
   s.add_dependency 'nokogiri', '~> 1.5.0'
@@ -35,7 +33,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.add_development_dependency 'database_cleaner'
-  s.add_development_dependency 'heroku'
   s.add_development_dependency 'rack-test'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'pry'
