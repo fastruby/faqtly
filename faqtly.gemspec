@@ -11,8 +11,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rake'
   s.add_dependency 'i18n'
-  s.add_dependency 'httparty', '~> 0.8.1'
-  s.add_dependency 'nokogiri', '~> 1.5.0'
+  s.add_dependency 'nokogiri', '~> 1.5'
   s.add_dependency 'chronic'
   s.add_dependency 'sinatra', '~> 1.4.5'
   s.add_dependency 'sinatra-support'
