@@ -12,15 +12,15 @@ Gem::Specification.new do |s|
   s.add_dependency 'rake'
   s.add_dependency 'i18n'
   s.add_dependency 'chronic'
-  s.add_dependency 'sinatra', '~> 1.4.5'
+  s.add_dependency 'sinatra', '~> 2.0.0.beta1'
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
   s.add_dependency 'sequel', '~> 4.24.0'
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
-  s.add_dependency 'sass', '~> 3.2.19'
-  s.add_dependency 'compass', '~> 0.12.0'
+  s.add_dependency 'sass', '>= 3.2.19'
+  s.add_dependency 'bourbon', '~> 4.2.7'
   s.add_dependency 'grid-coordinates', '~> 1.1.4'
   s.add_dependency 'rack-flash3'
   s.add_dependency 'sequel_pg', '~> 1.6.13'
