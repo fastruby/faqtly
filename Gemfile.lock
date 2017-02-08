@@ -66,6 +66,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     pg (0.18.4)
+    power_assert (1.0.1)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -103,6 +104,8 @@ GEM
     sinatra-support (1.2.2)
       sinatra (>= 1.0)
     slop (3.6.0)
+    test-unit (3.2.3)
+      power_assert
     thin (1.7.0)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -125,6 +128,7 @@ DEPENDENCIES
   pry-nav
   rack-test
   shotgun (~> 0.9)
+  test-unit
   thin
 
 BUNDLED WITH

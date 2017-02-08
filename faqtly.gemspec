@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'rack-test'
+  s.add_development_dependency 'test-unit'
   s.add_development_dependency 'capybara', '~> 2.0.3'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-nav'
