@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'httparty', '~> 0.8.1'
   s.add_dependency 'nokogiri', '~> 1.5.0'
   s.add_dependency 'chronic'
-  s.add_dependency 'sinatra', '~> 1.4.5'
+  s.add_dependency 'sinatra', '~> 2.0.0.beta1'
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
   s.add_dependency 'sequel', '~> 4.24.0'
