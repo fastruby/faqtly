@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rake'
   s.add_dependency 'i18n'
   s.add_dependency 'httparty', '~> 0.8.1'
-  s.add_dependency 'nokogiri', '~> 1.5.0'
+  s.add_dependency 'nokogiri', '~> 1.6.8'
   s.add_dependency 'chronic'
   s.add_dependency 'sinatra', '~> 2.0.0.beta1'
   s.add_dependency 'sinatra-support'
@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'database_cleaner'
   s.add_development_dependency 'rack-test'
-  s.add_development_dependency 'capybara'
+  s.add_development_dependency 'capybara', '2.18.0'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-nav'
   s.add_development_dependency 'thin'
