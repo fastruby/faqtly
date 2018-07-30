@@ -20,14 +20,14 @@ class TestTags < Test::Unit::TestCase
     authorize_user!
     visit "/tags/#{@tag.permalink}/edit"
     assert_equal 200, page.status_code
-    assert page.has_xpath?("//input[@value='put']")
+    assert page.has_xpath?("//input[@value='put']", visible: false)
   end
 
   def test_tags_new_for_authorized_user
     authorize_user!
     visit '/tags/new'
     assert page.has_css?("#new-tags-form")
-  end  
+  end
 
   def test_tags_update
     @tag = Tag.create( name: 'Hosting' )
