@@ -1,4 +1,3 @@
-require 'rack-flash'
 require 'i18n'
 require 'sequel'
 require 'will_paginate'

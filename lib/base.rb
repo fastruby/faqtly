@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require 'sinatra/flash'
 
 module Faqtly
   class Base < Sinatra::Base
@@ -22,7 +23,7 @@ module Faqtly
     set :scss, {style: :compact, debug_info: false}
 
     use Rack::MethodOverride
-    use Rack::Flash, sweep: true
+    register Sinatra::Flash
 
     helpers Rack::Utils
     helpers Haml::Util
