@@ -3,7 +3,7 @@ PATH
   specs:
     faqtly (1.0)
       chronic
-      compass (~> 0.12.0)
+      compass (= 1.0.0)
       grid-coordinates (~> 1.1.4)
       haml (~> 4.0.5)
       httparty (~> 0.8.1)
@@ -12,7 +12,7 @@ PATH
       pg (~> 0.18.2)
       rack-flash3
       rake
-      sass (~> 3.2.19)
+      sass (~> 3.4.25)
       sequel (~> 4.24.0)
       sequel_pg (~> 1.6.13)
       sinatra (~> 2.0.0.beta1)
@@ -24,6 +24,7 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    byebug (9.1.0)
     capybara (2.18.0)
       addressable
       mini_mime (>= 0.1.3)
@@ -34,15 +35,23 @@ GEM
     chronic (0.10.2)
     chunky_png (1.3.10)
     coderay (1.1.2)
-    compass (0.12.7)
+    compass (1.0.0)
       chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
+      compass-core (~> 1.0.0)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.5)
     daemons (1.2.6)
     database_cleaner (1.7.0)
     eventmachine (1.2.7)
-    fssm (0.2.10)
+    ffi (1.9.25)
     grid-coordinates (1.1.9)
       compass (>= 0.11.5)
     haml (4.0.7)
@@ -77,7 +86,10 @@ GEM
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
-    sass (3.2.19)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    sass (3.4.25)
     sequel (4.24.0)
     sequel_pg (1.6.19)
       pg (>= 0.8.0)
@@ -107,6 +119,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug (~> 9.0)
   capybara (= 2.18.0)
   database_cleaner
   faqtly!

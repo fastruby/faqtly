@@ -21,8 +21,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
-  s.add_dependency 'sass', '~> 3.2.19'
-  s.add_dependency 'compass', '~> 0.12.0'
+  s.add_dependency 'sass', '~> 3.4.25'
+  s.add_dependency 'compass', '1.0.0'
   s.add_dependency 'grid-coordinates', '~> 1.1.4'
   s.add_dependency 'rack-flash3'
   s.add_dependency 'sequel_pg', '~> 1.6.13'
