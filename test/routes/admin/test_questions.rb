@@ -53,4 +53,20 @@ class TestQuestions < Test::Unit::TestCase
     put "/questions/#{@question.permalink}", question: { question: "WWSJD?" }
     assert_equal "WWSJD?", Question[@question.id].question
   end
+
+  def test_questions_pagination
+    authorize_user!
+    Question.create(question: "First question", answer: "First answer!")
+    10.times { |i| Question.create(question: "#{i}?", answer: "#{i}!") }
+    Question.create(question: "Last question", answer: "Last answer!")
+
+    visit '/'
+    assert page.has_content?("First question")
+    deny page.has_content?("Last question")
+
+    click_link "Próxima página"
+    assert current_url.end_with? "?page=2"
+    deny page.has_content?("First question")
+    assert page.has_content?("Last question")
+  end
 end
