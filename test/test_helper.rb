@@ -35,7 +35,7 @@ class Test::Unit::TestCase
 
     # Asserts that the SEO for the page is proper
     def assert_seo
-      within('head') do
+      within('head', visible: false) do
         assert meta_tag('description')[:content], "No description meta tag for #{page.current_path}"
         assert meta_tag('keywords')[:content], "No keywords meta tag for #{page.current_path}"
       end
@@ -45,7 +45,7 @@ class Test::Unit::TestCase
     #
     # @param [String] eg. 'description'
     def meta_tag(name)
-      page.first(:xpath, "//meta[@name=\"#{name}\"]")
+      page.first(:xpath, "//meta[@name=\"#{name}\"]", visible: false)
     end
 
     # AKA assert_false

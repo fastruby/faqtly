@@ -6,12 +6,12 @@ development:
   password: postgres
 
 test: &test
-  adapter: <%= ENV['TDDIUM_DB_PG_ADAPTER'] %>
+  adapter: <%= ENV['TDDIUM_DB_ADAPTER'] %>
   encoding: utf8
   reconnect: false
-  database: <%= ENV['TDDIUM_DB_PG_NAME'] %>
-  username: <%= ENV['TDDIUM_DB_PG_USER'] %>
-  password: <%= ENV['TDDIUM_DB_PG_PASSWORD'] %>
+  database: <%= ENV['TDDIUM_DB_NAME'] %>
+  username: <%= ENV['TDDIUM_DB_USER'] %>
+  password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
   host: <%= ENV['TDDIUM_DB_PG_HOST'] %>
   port: <%= ENV['TDDIUM_DB_PG_PORT'] %>
 

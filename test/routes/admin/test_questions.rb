@@ -25,7 +25,7 @@ class TestQuestions < Test::Unit::TestCase
     authorize_user!
     visit "/questions/#{@question.permalink}/edit"
     assert_equal 200, page.status_code
-    assert page.has_xpath?("//input[@value='put']")
+    assert page.has_xpath?("//input[@value='put']", visible: false)
   end
 
   def test_questions_delete
