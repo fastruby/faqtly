@@ -1,0 +1,294 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/box-shadow";
+@import "bootstrap/mixins";
+
+@mixin linea-bajorelieve {
+  border-bottom: 1px solid #d0ddbb;
+  @include single-box-shadow(#fff, 0, 1px, 0);
+}
+
+
+/* ---------------------------------------------------- */
+/* OMBUSHOP FAQTLY - styles */
+
+/* ----------------------------- */
+/* GENERAL */
+
+.container {
+  a.brand {
+    font-family: 'PT Sans', sans-serif;
+  }
+  margin-top: 4em;
+}
+
+.navbar {
+  .container {
+    margin-top: 0em;
+  }
+}
+
+html {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+body {
+  background: #e0efec;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #55595F;
+  line-height: 160%;
+  text-shadow: 0 1px 0 #fff;
+  height:100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #128382;
+  font-family: 'Cabin', arial, serif;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+a {
+  color: #0E84C4;
+  &:visited {
+    //color: #084F75;
+  }
+  &:hover {
+    color: #1099E4;
+  }
+}
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+h2 a, h3 a {
+  color: inherit;
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #1099E4;
+  }
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* arreglar la ruta a los iconos de bootstrap */
+  background-image: url('/images/glyphicons-halflings.png');
+}
+.icon-white {
+  background-image: url("/images/glyphicons-halflings-white.png");
+}
+#outer-container {
+  min-height:100%;
+  position:relative;
+}
+
+/* ----------------------------- */
+/* HEADER */
+
+.navbar .nav > li.logo-container {
+  margin-right: 30px;
+}
+.navbar .nav > li.nav-item {
+  padding: 0;
+  margin-top: 20px;
+  a {
+    @include border-radius(7px); 
+    color: #859C9C;
+    color: #444;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 0;
+    padding: 10px 12px;
+    text-decoration: none;
+    @include single-text-shadow(#fff, 0, 1px, 0);
+    text-transform: uppercase;
+    &:hover {
+      background: #e0efec;
+      color: darken(#859C9C, 10%);
+      @include box-shadow(rgba(255,255,255,.5) 0 13px 10px inset);
+    }
+    &:active {
+      background: darken(#e0efec, 5%);
+      color: darken(#859C9C, 20%);
+      box-shadow: rgba(0, 0, 0,.1) 0 1px 2px inset, rgba(255,255,255,.7) 0 13px 10px inset;
+    }
+  }
+}
+.navbar-inner {
+  div.container {
+    height: 100px
+  }
+}
+div.navbar div.navbar-inner {
+  background-color: #128382;
+  @include gradient-vertical(#FFF, #FFF);
+  a.brand {
+    padding-top: 20px;
+    img {
+      width: 195px;
+    }   
+  } 
+  form#search {
+    margin-top: 37px;
+    input.search-query {
+      padding-right: 14px;
+      padding-right: 4px 9;
+      padding-left: 14px;
+      padding-left: 4px 9;
+      margin-bottom: 0;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      color: #888;
+      background-color: white;
+      border: 1px solid #CCC;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+      -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+      transition: border linear 0.2s, box-shadow linear 0.2s;
+    }
+  }
+}
+
+/* ----------------------------- */
+/* CONTENT */
+
+body > #outer-container > div.container {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  h1 {
+    font-size: 35px;
+    @include linea-bajorelieve;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+  }
+  h2 {
+    font-size: 21px;
+  }
+}
+div.actions {
+  width: 180px;
+  text-align: right;
+  .btn {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 4px;
+  }
+  form {
+    display: inline;
+  }
+}
+.search-string {
+  color: #55595F;
+  background-color: #ffffdf;
+  width: 600px;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+  font-size: 16px;
+  strong {
+    font-weight: bold;
+    font-style: italic;
+    color: #ff8c2f;
+  }
+}
+.row {
+  margin-left: 0;
+}
+div.row.question {
+  @include linea-bajorelieve;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 300px;
+  padding-bottom: 20px;
+  div.contenido {
+    width: 659px;
+  }
+}
+div.row.show {
+  width: 700px;
+}
+div.pagination {
+  a{
+    &:hover {
+      background-color: #E6E6E6;
+    }
+    &.next {
+      @include border-right-radius(8px);
+      @include border-left-radius(0);
+      border-left-width: 0px;
+    }
+    &.previous {
+      @include border-left-radius(8px);
+      @include border-right-radius(0);
+      border-left-width: 1px;
+    }
+    i[class^="icon-"] {
+      //background-image: url('/images/glyphicons-halflings.png');
+    }
+  }
+  a.previous:last-child, a.next:first-child {
+    @include border-right-radius(8px);
+    @include border-left-radius(8px);
+    border-left-width: 1px;
+  }
+}
+
+/* ----------------------------- */
+/* FORMS */
+
+form {
+  legend {
+    @include linea-bajorelieve;
+    color: #128382;
+    font-family: 'Cabin', arial, serif;
+    font-weight: normal;
+    font-size: 23px;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  div.control-group:last-child {
+    width: 680px;
+  }
+}
+
+/* ----------------------------- */
+/* FOOTER */
+
+footer.footer {
+  background: #4a382f;
+  @include single-box-shadow(rgba(0, 0, 0, .3), 0, -2px, 3px);
+  width:100%;
+  height: 130px;
+  position: absolute;
+  bottom: 0;
+  
+  .container {
+    text-align: center;
+    padding-top: 1.3em;
+    padding-bottom: 1.3em;
+    margin-top: 0;
+    color: #F2F9F4;
+    @include single-text-shadow(rgba(0,0,0,0.3), 0, -1px, 0);
+    a {
+      color: #ffffdf;
+    }
+    .footer-logo {
+      background: url('http://www.ombushop.com/images/ombu-logo-footer.png') #4a382f top left no-repeat;
+      text-indent: -20000px;
+      width: 46px;
+      height: 46px;
+      margin: 10px auto 0 auto;
+    }
+  }
+}

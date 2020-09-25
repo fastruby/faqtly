@@ -1,0 +1,3 @@
+# Roadmap for faqtly
+
+- Admin area

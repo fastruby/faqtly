@@ -1,0 +1,65 @@
+!!!
+%html{html_attrs}
+  %head
+    %meta{:'http-equiv' => "Content-Type", content: "text/html; charset=utf-8"}
+    %meta{name: "lang", content: "es"}
+    %meta{name: "description", content: meta_description}
+    %meta{name: "keywords", content: keywords}
+
+    %title= page_title
+
+    / FAVICON
+    %link{href: u("images/favicon.png"), rel: "icon", type: "image/png"}
+    %link{href: u("favicon.ico"), rel: "shortcut icon"}
+    / TYPOGRAPHY
+    %link{href:'//fonts.googleapis.com/css?family=Cabin:bold', media: "screen", rel: 'stylesheet', type: "text/css"}
+    %link{href: '//fonts.googleapis.com/css?family=PT+Sans', rel: 'stylesheet', type: 'text/css'}
+    / STYLES
+    %link{href: u('stylesheets/bootstrap.css'), media: "screen", rel: 'stylesheet', type: "text/css"}
+    %link{href: u('stylesheets/ombushop.css'), media: "screen", rel: 'stylesheet', type: "text/css"}
+    %link{rel: "stylesheet", type: "text/css", media: "screen",
+            href: u("stylesheets/bootstrap-wysihtml5.css")}
+    / SCRIPTS
+    %script{type: "text/javascript", src: "//code.jquery.com/jquery-1.8.2.min.js"}
+    %script{type: "text/javascript", src: u("javascripts/lib/modernizr-1.6.min.js")}
+    %script{type: "text/javascript", src: u("javascripts/application.js")}
+    %script{type: "text/javascript", src: u("javascripts/wysihtml5-0.3.0.min.js")}
+    %script{type: "text/javascript", src: u("javascripts/bootstrap-wysihtml5.js")}
+    %script{async: "", src: "//www.google-analytics.com/ga.js", type: "text/javascript"}
+
+  %body
+    #outer-container
+      != partial :_nav_main
+
+      .container
+        != partial :_notices
+        != yield
+
+      != partial :_analytics
+
+      %footer.footer
+        / .navbar.navbar-fixed-bottom
+        /   .navbar-inner
+        .container
+          Copyright 2018,
+          %a{href: "https://www.ombushop.com", title: "Tu Tienda Online"}
+            OmbuShop.com
+          \|
+          %a{href: "https://www.ombushop.com", title: "Tu Tienda Online"}
+            Crea Tu Tienda Virtual Hoy
+          \| Lovingly crafted by
+          %a{href: "https://www.ombushop.com/quienes-somos", title: "Team OmbuShop"}
+            these guys
+          .footer-logo
+            = "OmbuShop"
+        :javascript
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-18017766-1']);
+          _gaq.push(['_setDomainName', '.ombushop.com']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();

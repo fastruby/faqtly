@@ -1,0 +1,23 @@
+development:
+  host: 127.0.0.1
+  adapter: postgres
+  database: faqtly_development
+  username: postgres
+  password: postgres
+
+test: &test
+  adapter: <%= ENV['TDDIUM_DB_ADAPTER'] %>
+  encoding: utf8
+  reconnect: false
+  database: <%= ENV['TDDIUM_DB_NAME'] %>
+  username: <%= ENV['TDDIUM_DB_USER'] %>
+  password: <%= ENV['TDDIUM_DB_PASSWORD'] %>
+  host: <%= ENV['TDDIUM_DB_PG_HOST'] %>
+  port: <%= ENV['TDDIUM_DB_PG_PORT'] %>
+
+production:
+  adapter: postgres
+  encoding: utf8
+  reconnect: false
+  database: faqtly_production
+  pool: 5

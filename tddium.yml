@@ -1,0 +1,16 @@
+:tddium:
+  :ruby_version: ruby-2.3.1
+  :bundler_version: 1.10.6
+  :tests:
+    - bundle exec rake test --trace
+
+  :postgresql:
+    :version: '9.2'
+    :adapter: postgres
+    :config:
+      :adapter: postgres
+      :database: <%= ENV['TDDIUM_DB_PG_NAME'] %>
+      :username: <%= ENV['TDDIUM_DB_PG_USER'] %>
+      :password: <%= ENV['TDDIUM_DB_PG_PASSWORD'] %>
+      :host: <%= ENV['TDDIUM_DB_PG_HOST'] %>
+      :port: <%= ENV['TDDIUM_DB_PG_PORT'] %>

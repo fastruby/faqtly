@@ -1,0 +1,23 @@
+/* NO USAR ESTA HOJA DE ESTILOS */
+
+@import 'compass/reset';
+@import 'bootstrap-responsive';
+@import 'compass/utilities';
+@import 'compass/css3';
+
+.container {
+  a.brand {
+    font-family: 'PT Sans', sans-serif;
+  }
+  margin-top: 4em;
+}
+
+.navbar {
+  .container {
+    margin-top: 0em;
+  }
+}
+
+@import 'ombushop';
+
+/* NO USAR ESTA HOJA DE ESTILOS */

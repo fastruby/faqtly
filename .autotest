@@ -1,0 +1,24 @@
+Autotest.add_hook :initialize do |at|
+  ##
+  # file in /models -> run test in /test/models
+  #
+  at.add_mapping(/^models\/.*\.rb$/) do |filename, _|
+    at.files_matching %r%^test/models/.*#{filename}$%
+  end
+
+  ##
+  # file in /routes -> run test in /test
+  #
+  at.add_mapping(/^routes\/.*\.rb$/) do |filename, _|
+    at.files_matching %r%^test/.*#{filename}$%
+  end
+
+  ##
+  # file in /helpers -> run test in /test/helpers
+  #
+  at.add_mapping(/^helpers\/.*\.rb$/) do |filename, _|
+    at.files_matching %r%^test/helpers/.*#{filename}$%
+  end
+
+
+end

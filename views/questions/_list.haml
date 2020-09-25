@@ -1,0 +1,20 @@
+- if @questions.empty?
+  %h2= t(:no_questions)
+
+  -if can?
+    %a{href: u('questions/new')}= t(:'questions.ask')
+
+- @questions.each do |q|
+  .row.question
+    .contenido
+      %h2
+        %a{ href: u("preguntas/#{q.permalink}")}= q.question
+      %p!= q.answer
+    -if can?
+      .span1.small.actions
+        %a{ href: u("questions/#{q.permalink}/edit"), class: "btn"}= t(:edit)
+        %form{ action: u("questions/#{q.permalink}"), method: 'post'}
+          %input{ type: 'hidden', name: '_method', value: 'delete'}
+          %input{ type: 'submit', value: t(:delete), class: "btn btn-danger"}
+
+!=pagination(scope: @questions)
