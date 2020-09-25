@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'sinatra', '~> 2.0.0.beta1'
   s.add_dependency 'sinatra-support'
   s.add_dependency 'haml', '~> 4.0.5'
-  s.add_dependency 'sequel', '~> 4.24.0'
+  s.add_dependency 'sequel', '~> 5.36.0'
   s.add_dependency 'will_paginate', '~> 3.0.5'
 
   # Sass & Compass
@@ -25,8 +25,8 @@ Gem::Specification.new do |s|
   s.add_dependency 'compass', '1.0.0'
   s.add_dependency 'grid-coordinates', '~> 1.1.4'
   s.add_dependency 'sinatra-flash'
-  s.add_dependency 'sequel_pg', '~> 1.6.13'
-  s.add_dependency 'pg', '~> 0.18.2'
+  s.add_dependency 'sequel_pg', '~> 1.14'
+  s.add_dependency 'pg', '~> 1.2.3'
 
   s.files         = `git ls-files`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
@@ -38,6 +38,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'capybara', '2.18.0'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'pry-nav'
-  s.add_development_dependency 'thin'
+  s.add_development_dependency 'puma'
   s.add_development_dependency 'shotgun', '~> 0.9'
 end
