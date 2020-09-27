@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.10
+      - image: circleci/postgres:9.6-alpine
+        environment:
+          POSTGRES_USER: faqtly_user
+          POSTGRES_DB: faqtly_test
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: echo "Running from .circleci/config.yml"
+      - run: echo $CC_TEST_REPORTER_ID
+      - run: ruby -v
+      - run: gem install bundler
+      - run: bundle -v
+      - run: bundle check --path=vendor/bundle || bundle install --path=vendor/bundle --jobs=4 --retry=3
+      - run: cp config/database.yml.tmpl config/database.yml
+      - run: RACK_ENV=test bundle exec rake sq:reset
+      - run: RACK_ENV=test bundle exec rake

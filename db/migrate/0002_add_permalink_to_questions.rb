@@ -1,7 +1,8 @@
-require_relative '../../app'
-
 Sequel.migration do
   up do
+    require_relative '../../lib/permalinker'
+    require_relative '../../models/question'
+
     add_column :questions, :permalink, String
     Question.send(:get_db_schema, true)
     Question.all.each do |q|

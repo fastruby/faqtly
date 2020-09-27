@@ -1,5 +1,8 @@
 Sequel.migration do
   up do
+    require_relative '../../lib/permalinker'
+    require_relative '../../models/tag'
+
     add_column :tags, :permalink, String
     Tag.send(:get_db_schema, true)
     Tag.all.each do |t|
